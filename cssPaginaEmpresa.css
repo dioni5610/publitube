@@ -1,0 +1,69 @@
+html
+{
+	background-color: black;
+}
+
+header 
+{
+	background-color: red;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	height: 200px;
+	width: 100%;
+	display: inline-flex;
+	text-align: center;
+}
+
+#titulo
+{
+	text-align: center;
+	font-size: 350%;
+	color:white;
+	padding-top: 40px;
+	padding-right: 100px;
+	padding-left: 280px;
+}
+
+#logo
+{
+	width: 300px;
+  	height: 210px;
+  	padding-top: 0%;
+}
+
+#FormularioEmpresa
+{
+	color:white;
+	background-color: #333333;
+	padding-left: 39%;
+	padding-right: 38%;
+}
+#FormularioEmpresa input
+{
+	text-align: left;
+	width: 280px;
+	height: 35px;
+	padding: 0px 10px;
+	color: #6d6d6d
+	padding-top: 20px;
+}
+
+#FormularioEmpresa.dentro;
+{
+	padding-top: 3px;
+}
+
+#FormularioEmpresa button
+{
+	width: 135px;
+}
+
+footer
+{
+	background-color:red;
+	height: 30px; 
+	text-align: center;
+	color: white;
+	font-style: italic;
+	font-size:-small;
+}
