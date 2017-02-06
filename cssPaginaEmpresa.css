@@ -1,0 +1,66 @@
+html
+{
+	background-color: #2b2b2a;
+}
+
+header 
+{
+	background-color: red;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	height: 200px;
+	width: 100%;
+	display: inline-flex;
+	text-align: center;
+
+}
+
+#titulo
+{
+	text-align: center;
+	font-size: 350%;
+	color:white;
+	padding-top: 40px;
+	padding-right: 100px;
+	padding-left: 280px;
+}
+
+#logo
+{
+	width: 300px;
+  	height: 210px;
+  	padding-top: 0%;
+}
+
+#title{
+	text-align: center;
+	font-size: 350%;
+	color:white;
+	padding-top: 40px;
+	padding-right: 100px;
+	padding-left: 280px;
+}
+
+#fornulario{
+   
+    float: center;
+	
+}
+
+
+input{
+	margin: 6;
+}
+
+label{
+	color:white;
+}
+
+
+section{
+	font-size: 25px;
+	margin-right:auto;
+}
+
+
+
