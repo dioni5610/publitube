@@ -62,5 +62,37 @@ section{
 	margin-right:auto;
 }
 
+th{
+	background: white;
+	border-radius: 9px;
+	padding:  5px 15px;
+}
 
+td{
+	background: red;
+	border-radius: 9px;
+	padding:  5px 15px;
 
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing: 3px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+caption{
+	background: red;
+}
+
+#superior{
+	margin-top: 20;
+}
+
+#h2{
+	font-size: 35;
+	margin-top: 20;
+	text-align: center;
+	color: white;
+}

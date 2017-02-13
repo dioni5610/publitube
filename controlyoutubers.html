@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">    <!-- lang es el lenjuage humano-->
+
+<head> 
+
+<meta charset="utf-8"/> 
+
+<meta name="descripcion" content="ejemplo de HTML5"/> 
+<title>PubliTube</title>
+
+<link rel="stylesheet" type="text/css" href="estilo.css"> 
+
+</head>
+<link rel="stylesheet" type="text/css" href="cssPaginaEmpresa.css">
+<body>  
+
+<header>
+		<h1 id = titulo> PublicTube</h1> 
+		<img id ="Logo" src="/home/dioni/Documentos/Prog para internet/youtube.png">
+	</header>
+
+<table>
+	<caption>Youtubers registrados</caption>
+
+<thead>
+	<tr>
+		
+		<th>Icono de canal</th> 
+		<th>Nombre</th>
+		<th>Nombre del canal</th>
+		<th>Correo</th>
+		<th>Fecha de registro</th>
+		<th>Telefono</th>
+		<th>Sexo</th>
+
+	</tr>
+
+</thead>
+<tbody>
+	<tr >
+		<td><img src="images.png"></td>
+		<td>Gabriel MOntiel</td>
+		<td>Werevertumorro</td>
+		<td>GabrelM@gmail.com</td>
+		<td>13/02/2017</td>
+        <td>3315647364</td>
+		<td>M</td>
+	</tr>
+
+<tr>
+		<td><img src="images.png"></td>
+		<td>German Garmendia</td>
+		<td>HolaSoyGerman</td>
+		<td>GermanG@gmail.com</td>
+		<td>01/02/2017</td>
+        <td>3334756475</td>
+        <td>M</td>
+	</tr>
+
+	<tr>
+		<<td><img src="images.png"></td>
+		<td>Juliana</td>
+		<td>Yuya</td>
+		<td>Yuya@gmail.com</td>
+		<td>04/01/2017</td>
+        <td>3334758475</td>
+        <td>F</td>
+	</tr>
+
+</tbody>
+</table>
+
+<h1 id="h2">Registro manual de youtubers</h2>
+<section>
+
+<form action="controlyoutubers.html" method="get"> <!--tambien se puede post, con get se ven los datos en la url-->
+
+
+<div id="superior">
+<label for="nombre" >Nombre</label>
+<input type="text" id="formnombre" name="nombre" placeholder="Nombre" />
+</div>
+
+<div>
+<label for="contraseña">Contraseña</label>
+<input type="password" name="password" id="contraseña" placeholder="Contraseña" pattern=""/><!-- Pattern sirve para una exprecion regular-->
+</div>
+
+<div>	
+	<label for="nombrecanal">Nombre del canal</label>
+	<input type="text" name="nombrecanal" placeholder="Nombre del canal">
+</div>
+
+
+<div>
+<label for="correo">Correo</label>
+<input type="mail" id="correo" name="correo" placeholder="Correo" />
+</div>
+
+<div>	
+	<label for="Telefono">Nombre del canal</label>
+	<input type="text" name="Telefono" placeholder="Telefono">
+</div>
+
+
+<div>
+<label>Sexo: </label>
+<input type="radio" name="opcion" value="1" id="opcion1">
+<label for="opcion1">Femenino</label>
+<input type="radio" name="opcion" value="2" id="opcion2">
+<label for="opcion2">Masculino</label>
+</div>
+
+<div>
+	<button type="submit">Agregar</button>
+
+</div>
+
+</section>
+
+
+
+</body>
+
+</html>
