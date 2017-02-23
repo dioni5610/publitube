@@ -1,0 +1,121 @@
+header{
+  grid-row: 1;
+  grid-column:1;
+}
+
+/*Logo*/
+.logo
+{
+	 text-align: center;
+	 color: maroon;  
+ }
+
+/*Barra menu Principal*/
+.barraMenu
+{
+	padding: 0;
+	margin: auto;
+}
+
+.barraMenu li 
+{
+	display: inline;
+}
+
+.barraMenu li a 
+{
+	font-family: Quicksand , sans-serif;;
+	font-size:20px;
+	text-decoration: none;
+	float:left;
+	padding: 10px;
+	background-color: #B40404;
+	color: #fff;
+	width: 15%; height:25px;
+}
+
+.barraMenu li a:hover 
+{
+	background-color: #FF0000;
+	margin-top:-2px;
+	padding-bottom:12px;
+}
+
+
+/*Boody*/
+  body{
+    text-align: center;
+    font-family: Quicksand , sans-serif;
+
+  }
+  h1{
+    font-size:1.5em;
+    color:#525252;
+  }
+  p{
+  	color: gray;
+  }
+/*Letra*/
+.Simples_letras
+{
+    margin-bottom: 25px;
+    padding-right: 20px;
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 28pt;
+}
+
+/*Footer*/
+.pieUno
+{
+	background-color: #383838;
+	color: white;
+	display: flex;
+
+	text-align: center;
+	font-family: Quicksand , sans-serif;
+} 
+
+.pieUno hr
+{
+	width: 100px;
+  	margin-bottom: 40px;
+  	height: 2px;
+  	border-style: none;
+  	background-color: red;
+}
+
+.mapaYoutuber
+{
+	flex: 1;
+}
+
+.mapaEmpresa
+{
+	flex: 1;
+}
+
+.mapaSitio
+{
+	flex: 1;
+	text-align: center;
+}
+
+.listaSitio
+{
+	list-style-type: none;
+}
+
+.listaSitio a
+{
+	color: white;
+}
+
+.pieDos
+{
+	background-color: #383838;
+	color: white;
+	display: flex;
+	text-align: right;
+	font-family:  Quicksand,sans-serif;
+}
