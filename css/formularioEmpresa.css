@@ -1,6 +1,7 @@
-header{
-  grid-row: 1;
-  grid-column:1;
+header
+{
+  	grid-row: 1;
+	grid-column:1;
 }
 
 /*Logo*/
@@ -41,6 +42,24 @@ header{
 	padding-bottom:12px;
 }
 
+/*Boody*/
+body
+{
+	text-align: center;
+	font-family: Quicksand , sans-serif;
+}
+
+h1
+{
+	font-size:1.5em;
+	color:#525252;
+}
+
+p
+{
+	color: gray;
+}
+
 /*Formulario*/
 .EtiquetaRegistro
 {
@@ -68,21 +87,10 @@ table
 {
 	border: 1px solid black;
 	width: 50%;
+	font: 14px arial, sans-serif;
+	padding-left: 5%;
 }
 
-/*Boody*/
-  body{
-    text-align: center;
-    font-family: Quicksand , sans-serif;
-
-  }
-  h1{
-    font-size:1.5em;
-    color:#525252;
-  }
-  p{
-  	color: gray;
-  }
 
 /*Footer*/
 .pieUno
