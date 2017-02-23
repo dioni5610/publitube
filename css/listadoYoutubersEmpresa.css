@@ -1,126 +1,386 @@
-header{
-  grid-row: 1;
-  grid-column:1;
+@media (min-width: 1230px){
+	header{
+	  grid-row: 1;
+	  grid-column:1;
+	}
+
+	/*Logo*/
+	.logo
+	{
+		 text-align: center;
+		 color: maroon;  
+	 }
+
+	/*Barra menu Principal*/
+	.barraMenu
+	{
+		padding: 0;
+		margin: auto;
+	}
+
+	.barraMenu li 
+	{
+		display: inline;
+	}
+
+	.barraMenu li a 
+	{
+		font-family: Quicksand , sans-serif;;
+		font-size:20px;
+		text-decoration: none;
+		float:left;
+		padding: 10px;
+		background-color: #B40404;
+		color: #fff;
+		width: 15%; height:25px;
+	}
+
+	.barraMenu li a:hover 
+	{
+		background-color: #FF0000;
+		margin-top:-2px;
+		padding-bottom:12px;
+	}
+
+	/*Boody*/
+	  body{
+	    text-align: center;
+	    font-family: Quicksand , sans-serif;
+
+	  }
+	  h1{
+	    font-size:1.5em;
+	    color:#525252;
+	  }
+	  p{
+	  	color: gray;
+	  }
+
+	/*Table*/
+	table
+	{
+		font: normal 12px/150% Arial; 
+		background: #fff; 
+		width: 60%; 
+		-webkit-border-radius: 3px; 
+		-moz-border-radius: 3px; 
+		border-radius: 3px; 
+		margin: auto;
+		border-collapse: collapse; 
+		text-align: center; 
+
+	}
+
+	/*Footer*/
+	.pieUno
+	{
+		background-color: #383838;
+		color: white;
+		display: flex;
+
+		text-align: center;
+		font-family: Quicksand , sans-serif;
+	} 
+
+	.pieUno hr
+	{
+		width: 100px;
+	  	margin-bottom: 40px;
+	  	height: 2px;
+	  	border-style: none;
+	  	background-color: red;
+	}
+
+	.mapaYoutuber
+	{
+		flex: 1;
+	}
+
+	.mapaEmpresa
+	{
+		flex: 1;
+	}
+
+	.mapaSitio
+	{
+		flex: 1;
+		text-align: center;
+	}
+
+	.listaSitio
+	{
+		list-style-type: none;
+	}
+
+	.listaSitio a
+	{
+		color: white;
+	}
+
+	.pieDos
+	{
+		background-color: #383838;
+		color: white;
+		display: flex;
+		text-align: right;
+		font-family:  Quicksand,sans-serif;
+	}
 }
 
-/*Logo*/
-.logo
-{
-	 text-align: center;
-	 color: maroon;  
- }
+@media (min-width: 577px) and (max-width: 1230px){
+	header{
+	  grid-row: 1;
+	  grid-column:1;
+	}
 
-/*Barra menu Principal*/
-.barraMenu
-{
-	padding: 0;
-	margin: auto;
+	/*Logo*/
+	.logo
+	{
+		 text-align: center;
+		 color: maroon;  
+	 }
+
+	/*Barra menu Principal*/
+	.barraMenu
+	{
+		padding: 0;
+		margin: auto;
+	}
+
+	.barraMenu li 
+	{
+		display: inline;
+	}
+
+	.barraMenu li a 
+	{
+		font-family: Quicksand , sans-serif;;
+		font-size:20px;
+		text-decoration: none;
+		float:left;
+		padding: 10px;
+		background-color: #B40404;
+		color: #fff;
+		width: 15%; height:25px;
+	}
+
+	.barraMenu li a:hover 
+	{
+		background-color: #FF0000;
+		margin-top:-2px;
+		padding-bottom:12px;
+	}
+
+	/*Boody*/
+	  body{
+	    text-align: center;
+	    font-family: Quicksand , sans-serif;
+
+	  }
+	  h1{
+	    font-size:1.5em;
+	    color:#525252;
+	  }
+	  p{
+	  	color: gray;
+	  }
+
+	/*Table*/
+	table
+	{
+		font: normal 12px/150% Arial; 
+		background: #fff; 
+		width: 60%; 
+		-webkit-border-radius: 3px; 
+		-moz-border-radius: 3px; 
+		border-radius: 3px; 
+		margin: auto;
+		border-collapse: collapse; 
+		text-align: center; 
+
+	}
+
+	/*Footer*/
+	.pieUno
+	{
+		background-color: #383838;
+		color: white;
+		display: flex;
+
+		text-align: center;
+		font-family: Quicksand , sans-serif;
+	} 
+
+	.pieUno hr
+	{
+		width: 100px;
+	  	margin-bottom: 40px;
+	  	height: 2px;
+	  	border-style: none;
+	  	background-color: red;
+	}
+
+	.mapaYoutuber
+	{
+		flex: 1;
+	}
+
+	.mapaEmpresa
+	{
+		flex: 1;
+	}
+
+	.mapaSitio
+	{
+		flex: 1;
+		text-align: center;
+	}
+
+	.listaSitio
+	{
+		list-style-type: none;
+	}
+
+	.listaSitio a
+	{
+		color: white;
+	}
+
+	.pieDos
+	{
+		background-color: #383838;
+		color: white;
+		display: flex;
+		text-align: right;
+		font-family:  Quicksand,sans-serif;
+	}
 }
 
-.barraMenu li 
-{
-	display: inline;
-}
+@media (min-width: 0px) and (max-width: 577px){
+	header{
+	  grid-row: 1;
+	  grid-column:1;
+	}
 
-.barraMenu li a 
-{
-	font-family: Quicksand , sans-serif;;
-	font-size:20px;
-	text-decoration: none;
-	float:left;
-	padding: 10px;
-	background-color: #B40404;
-	color: #fff;
-	width: 15%; height:25px;
-}
+	/*Logo*/
+	.logo
+	{
+		 text-align: center;
+		 color: maroon;  
+	 }
 
-.barraMenu li a:hover 
-{
-	background-color: #FF0000;
-	margin-top:-2px;
-	padding-bottom:12px;
-}
+	/*Barra menu Principal*/
+	.barraMenu
+	{
+		padding: 0;
+		margin: auto;
+	}
 
-/*Boody*/
-  body{
-    text-align: center;
-    font-family: Quicksand , sans-serif;
+	.barraMenu li 
+	{
+		display: inline;
+	}
 
-  }
-  h1{
-    font-size:1.5em;
-    color:#525252;
-  }
-  p{
-  	color: gray;
-  }
+	.barraMenu li a 
+	{
+		font-family: Quicksand , sans-serif;;
+		font-size:20px;
+		text-decoration: none;
+		float:left;
+		padding: 10px;
+		background-color: #B40404;
+		color: #fff;
+		width: 15%; height:25px;
+	}
 
-/*Table*/
-table
-{
-	font: normal 12px/150% Arial; 
-	background: #fff; 
-	width: 60%; 
-	-webkit-border-radius: 3px; 
-	-moz-border-radius: 3px; 
-	border-radius: 3px; 
-	margin: auto;
-	border-collapse: collapse; 
-	text-align: center; 
+	.barraMenu li a:hover 
+	{
+		background-color: #FF0000;
+		margin-top:-2px;
+		padding-bottom:12px;
+	}
 
-}
+	/*Boody*/
+	  body{
+	    text-align: center;
+	    font-family: Quicksand , sans-serif;
 
-/*Footer*/
-.pieUno
-{
-	background-color: #383838;
-	color: white;
-	display: flex;
+	  }
+	  h1{
+	    font-size:1.5em;
+	    color:#525252;
+	  }
+	  p{
+	  	color: gray;
+	  }
 
-	text-align: center;
-	font-family: Quicksand , sans-serif;
-} 
+	/*Table*/
+	table
+	{
+		font: normal 12px/150% Arial; 
+		background: #fff; 
+		width: 60%; 
+		-webkit-border-radius: 3px; 
+		-moz-border-radius: 3px; 
+		border-radius: 3px; 
+		margin: auto;
+		border-collapse: collapse; 
+		text-align: center; 
 
-.pieUno hr
-{
-	width: 100px;
-  	margin-bottom: 40px;
-  	height: 2px;
-  	border-style: none;
-  	background-color: red;
-}
+	}
 
-.mapaYoutuber
-{
-	flex: 1;
-}
+	/*Footer*/
+	.pieUno
+	{
+		background-color: #383838;
+		color: white;
+		display: flex;
 
-.mapaEmpresa
-{
-	flex: 1;
-}
+		text-align: center;
+		font-family: Quicksand , sans-serif;
+	} 
 
-.mapaSitio
-{
-	flex: 1;
-	text-align: center;
-}
+	.pieUno hr
+	{
+		width: 100px;
+	  	margin-bottom: 40px;
+	  	height: 2px;
+	  	border-style: none;
+	  	background-color: red;
+	}
 
-.listaSitio
-{
-	list-style-type: none;
-}
+	.mapaYoutuber
+	{
+		flex: 1;
+	}
 
-.listaSitio a
-{
-	color: white;
-}
+	.mapaEmpresa
+	{
+		flex: 1;
+	}
 
-.pieDos
-{
-	background-color: #383838;
-	color: white;
-	display: flex;
-	text-align: right;
-	font-family:  Quicksand,sans-serif;
+	.mapaSitio
+	{
+		flex: 1;
+		text-align: center;
+	}
+
+	.listaSitio
+	{
+		list-style-type: none;
+	}
+
+	.listaSitio a
+	{
+		color: white;
+	}
+
+	.pieDos
+	{
+		background-color: #383838;
+		color: white;
+		display: flex;
+		text-align: right;
+		font-family:  Quicksand,sans-serif;
+	}
 }
