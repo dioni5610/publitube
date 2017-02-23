@@ -41,6 +41,35 @@ header{
 	padding-bottom:12px;
 }
 
+/*Formulario*/
+.EtiquetaRegistro
+{
+	font-size: 20pt;
+ 	text-align: left;
+}
+
+.llene
+{
+	font-size: 14pt;
+	color: red;
+}
+
+.separadorDatos
+{
+	color: #FFB600;
+}
+
+form
+{
+	padding-left: 32%
+}
+
+table
+{
+	border: 1px solid black;
+	width: 50%;
+}
+
 /*Boody*/
   body{
     text-align: center;
