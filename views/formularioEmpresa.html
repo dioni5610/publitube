@@ -20,7 +20,8 @@
 			<ul class="barraMenu">
 				<li><a href="../index.html" title="Inicio">Inicio</a></li>
 				<li><a href="../views/quienesSomos.html" title="Quienes Somos">&iquestQuienes somos?</a></li>
-				<li><a href="../views/terminos.html" title="terminos">Información</a></li>
+				<li><a href="#" title="Enlace genérico">Informaci&oacuten</a></li>
+
 				<li><a href="../views/contacto.html" title="Contacto">Contacto</a></li>
 				<li><a href="../views/eligeRegistro.html" title="Registro">Registro</a></li>
 				<li><a href="../views/maquetaPreguntas.html" title="FAQ">FAQ</a></li>
@@ -35,30 +36,30 @@
 			<label class="llene">Llene Formulario de Registro</label>
 			<hr class="SeparadorDatos">
 		</div>
-	 	<form>
+	 	<form name="formu" id="formu" onsubmit="return comprobar()">
 	  		<table id="formularioEmpresa">
-		    	<tr><td>Nombre de la Empresa</td><td><input type="text" maxlength="30" placeholder="ejem. Youtube"></td></tr>
+		    	<tr><td>Nombre de la Empresa</td><td><input type="text" maxlength="30" placeholder="ejem. Youtube" name="nombre"></td></tr>
 		    	<tr><td></td><td></td></tr>
 		    	<tr><td></td><td></td></tr>
-		    	<tr><td>E-mail</td><td><input type="email" maxlength="20" placeholder="ejem@ejem"></td></tr>
+		    	<tr><td>E-mail</td><td><input type="email" maxlength="40" placeholder="ejem@ejem" name="email"></td></tr>
 		    	<tr><td></td><td></td></tr>
 		    	<tr><td></td><td></td></tr>
-		    	<tr><td>Apellidos de Contacto</td><td><input type="text" maxlength="30" placeholder="ejem. Garcia"></td></tr>
+		    	<tr><td>Apellidos de Contacto</td><td><input type="text" maxlength="30" placeholder="ejem. Garcia" name="apellido"></td></tr>
 		    	<tr><td></td><td></td></tr>
 		    	<tr><td></td><td></td></tr>
-		    	<tr><td>Nombre del Contacto</td><td><input type="text" maxlength="20" placeholder="ejem. Dioni"></td></tr>
+		    	<tr><td>Nombre del Contacto</td><td><input type="text" maxlength="20" placeholder="ejem. Dioni" name="contac"></td></tr>
 		    	<tr><td></td><td></td></tr>
 		    	<tr><td></td><td></td></tr>
-		    	<tr><td>Contraseña</td><td><input type="password" maxlength="30" placeholder="Contraseña123"></td></tr>
+		    	<tr><td>Contraseña</td><td><input type="password" maxlength="30" placeholder="Contraseña123" name="pass"></td></tr>
 		    	<tr><td></td><td></td></tr>
 		    	<tr><td></td><td></td></tr>
-		    	<tr><td>Repita su Contraseña</td><td><input type="password" maxlength="30" placeholder="Contraseña123"></td></tr>
+		    	<tr><td>Repita su Contraseña</td><td><input type="password" maxlength="30" placeholder="Contraseña123" name="rpass"></td></tr>
 		    	<tr><td></td><td></td></tr>
 		    	<tr><td></td><td></td></tr>
-		    	<tr><td>Telefono de contacto</td><td><input type="tel" maxlength="12" placeholder="22 2222 22"></td></tr>
+		    	<tr><td>Telefono de contacto</td><td><input type="tel" maxlength="12" placeholder="22 2222 22" name="tel"></td></tr>
 		    	<tr><td></td><td></td></tr>
 		    	<tr><td></td><td></td></tr>
-		    	<tr><td>RFC</td><td><input type="text" maxlength="12" placeholder="RFC"></td></tr>
+		    	<tr><td>RFC</td><td><input type="text" maxlength="12" placeholder="RFC" name="rfc"></td></tr>
 		    	<tr><td></td><td></td></tr>
 		    	<tr><td></td><td></td></tr>
 		    	<tr><td></td><td><input type="submit"> <input type="reset"></td></tr>
@@ -97,5 +98,82 @@
 			<p>&copy 2017 PubliMex - Publicidad empresarial por bloggeros.		Tel.12233445</p>
 		</div>
 	</footer>
+
+	<script type="text/javascript">
+		function comprobar()
+		{
+			var nombre = document.formu.nombre.value;
+			var email = document.formu.email.value;
+			var apellido = document.formu.apellido.value;
+			var contac = document.formu.contac.value;
+			var pass = document.formu.pass.value;
+			var rpass = document.formu.rpass.value;
+			var tel = document.formu.tel.value;
+			var rfc = document.formu.rfc.value;
+			var expr = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+			if (nombre.length > 15)
+		   	{
+		      	alert("Tu nombre es demasiado grande. Redúcelo.");
+		      	return false;
+		   	}
+
+			if(expr.test(email))
+			{
+				
+			}
+			else{alert("El correo es invalido, vuelve a comprobar");}
+
+			if(rpass != pass)
+			{
+				alert("Las contraseñas no coinciden");
+				return false;
+			}
+
+			if(nombre.length == 0)
+			{
+				alert("Llenar todos los campos");
+		      	return false;
+			}
+			else if(email.length == 0)
+	      	{
+	      		alert("Llenar todos los campos");
+	      		return false;
+	      	}
+	      	else if(apellido.length == 0)
+	      	{
+	      		alert("Llenar todos los campos");
+	      		return false;
+	      	}
+	      	else if(contac.length == 0)
+	      	{
+	      		alert("Llenar todos los campos");
+	      		return false;
+	      	}
+	      	else if(pass.length == 0)
+	      	{
+	      		alert("Llenar todos los campos");
+	      		return false;
+	      	}
+	      	else if(rpass.length == 0)
+	      	{
+	      		alert("Llenar todos los campos");
+	      		return false;
+	      	}
+	      	else if(tel.length == 0)
+	      	{
+	      		alert("Llenar todos los campos");
+	      		return false;
+	      	}
+	      	else if(rcf.length == 0)
+	      	{
+	      		alert("Llenar todos los campos");
+	      		return false;
+	      	}
+
+			return true;
+		}
+	</script>
+
 </body>
 </html>

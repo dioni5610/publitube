@@ -3,25 +3,26 @@
 <head>
 	<!--Plantilla Titulo-->
 	<title>Titulo</title>
+	<link rel="stylesheet" type="text/css" href="registroyoutubers.css"/>
+	<link rel="shortcut icon" type= "image/png" href="favicon.png"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="../css/registroyoutubers.css"/>
-	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+
 </head>
 <body>
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
-			<img src="../images/logo.png" alt=""width="200" height="75" >
+			<img src="logo.png" alt=""width="200" height="75" >
 		</div>
 
 		<div>
 			<ul class="barraMenu">
-					<li><a href="../index.html" title="Inicio">Inicio</a></li>
-					<li><a href="#" title="Enlace genérico">¿Quienes somos?</a></li>
-					<li><a href="../views/terminos.html" title="terminos">Información</a></li>
-					<li><a href="../views/contacto.html" title="Contacto">Contacto</a></li>
-					<li><a href="../views/eligeRegistro.html" title="Registro">Registro</a></li>
-					<li><a href="../views/maquetaPreguntas.html" title="FAQ">FAQ</a></li>
+				<li><a href="#" title="Inicio">Inicio</a></li>
+				<li><a href="#" title="Enlace genérico">&iquestQuienes somos?</a></li>
+				<li><a href="#" title="Enlace genérico">Informaci&oacuten</a></li>
+				<li><a href="#" title="Enlace genérico">Contacto</a></li>
+				<li><a href="#" title="Enlace genérico">Registro</a></li>
+				<li><a href="#" title="FAQ">FAQ</a></li>
 			</ul>
 		</div> 
 	</header>
@@ -29,12 +30,13 @@
 	<h1 id="h2">Registro manual de youtubers</h2>
 <section>
 
-<form action="controlyoutubers.html" method="get"> <!--tambien se puede post, con get se ven los datos en la url-->
-
-
-<section> 
-
 <h1 id="h3">Llene el formulario de registro</h1>
+
+
+<form name="formulario" id="formulario" onsubmit="return comprobar()">
+
+
+
 <div>	
 	<label for="nombreusuario">Nombre de usuario</label>
 	<input type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de usuario">
@@ -43,6 +45,11 @@
 <div>
 <label for="password">Password</label>
 <input type="password" name="Password" id="password" placeholder="Contraseña" >
+</div>
+
+<div>
+<label for="passwordc">Repita Password</label>
+<input type="password" name="Passwordc" id="passwordc" placeholder="Repita Contraseña" >
 </div>
 
 <div>
@@ -62,19 +69,19 @@
 </div>
 
 <div>	
-	<label for="suscriptores">Suscriptores del canal</label>
-	<input type="text"  id="suscriptores" name="suscriptores" placeholder="Suscriptores">
+	<label for="subs">Suscriptores del canal</label>
+	<input type="text"  id="subs" name="subs" placeholder="Suscriptores">
 </div>
 
 
 <div>
 <label for="correo">Correo</label>
-<input type="mail" id="correo" name="correo" placeholder="Correo" />
+<input type="email" id="correo" name="correo" placeholder="Correo" />
 </div>
 
 <div>	
-	<label for="telefono">Nombre del canal</label>
-	<input type="text"  id="telefono" name="telefono" placeholder="Telefono">
+	<label for="telefono">Telefono</label>
+	<input type="tel"  id="telefono" name="telefono" placeholder="Telefono">
 </div>
 
 
@@ -87,11 +94,10 @@
 </div>
 
 <div>
-	<button type="submit">Registrarse</button>
-
+	<input type="submit"> <input type="reset">
 </div>
 
-</section>
+</form>
 
 	<!-- plantilla footer-->
 	<br><br><br>
@@ -111,12 +117,12 @@
 				<h5>MAPA DE SITIO</h5>
 				<hr>
 				<ul class="listaSitio">
-						<li><a href="../index.html">Inicio</a></li>
-						<li><a href="">¿Quiénes somos?</a></li>
-						<li><a href="">Información</a></li>
-						<li><a href="../views/contacto.html" title="Contacto">Contacto</a></li>
-						<li><a href="../views/eligeRegistro.html">Registro</a></li>
-						<li><a href="../views/maquetaPreguntas.html">FAQ</a></li>
+					<li><a href="">Inicio</a></li>
+					<li><a href="">&iquestQuienes somos?</a></li>
+					<li><a href="">Informaci&oacuten</a></li>
+					<li><a href="">Contacto</a></li>
+					<li><a href="">Registro</a></li>
+					<li><a href="">FAQ</a></li>
 				</ul>
 			</div>
 		</div>
@@ -124,5 +130,84 @@
 			<p>&copy 2017 PubliMex - Publicidad empresarial por bloggeros.		Tel.12233445</p>
 		</div>
 	</footer>
+
+
+<script type="text/javascript">
+		function comprobar()
+		{
+			var nombreusuario = document.formulario.nombreusuario.value;
+			var password = document.formulario.password.value;
+			var passwordc = document.formulario.passwordc.value;
+			var nombre = document.formulario.nombre.value;
+			var nombrecanal = document.formulario.nombrecanal.value;
+			var categoria = document.formulario.categoria.value;
+			var subs = document.formulario.subs.value;
+			var correo = document.formulario.correo.value;
+			var telefono = document.formulario.telefono.value;
+			var expr = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+			if(expr.test(correo))
+			{
+				
+			}
+			else{alert("Direccion de correo erronea");return false;}
+	
+			if(passwordc != password)
+			{
+				alert("Las contraseñas no coinciden");
+				return false;
+			}
+		
+			if(nombreusuario.length == 0)
+			{
+				alert("Llene los campos obligatorios");
+		      	return false;
+			}
+			else if(password.length == 0)
+	      	{
+	      		alert("Llene los campos obligatorios");
+	      		return false;
+	      	}
+	      	else if(passwordc.length == 0)
+	      	{
+	      		alert("Llene los campos obligatorios");
+	      		return false;
+	      	}
+	      	else if(nombre.length == 0)
+	      	{
+	      		alert("Llene los campos obligatorios");
+	      		return false;
+	      	}
+	      	else if(nombrecanal.length == 0)
+	      	{
+	      		alert("Llene los campos obligatorios");
+	      		return false;
+	      	}
+	      	else if(categoria.length == 0)
+	      	{
+	      		alert("Llene los campos obligatorios");
+	      		return false;
+	      	}
+	      	else if(subs.length == 0)
+	      	{
+	      		alert("Llene los campos obligatorios");
+	      		return false;
+	      	}
+	      	else if(correo.length == 0)
+	      	{
+	      		alert("Llene los campos obligatorios");
+	      		return false;
+	      	}
+	      	else if(telefono.length == 0)
+	      	{
+	      		alert("Llene los campos obligatorios");
+	      		return false;
+	      	}
+	      	
+
+			return true;
+		}
+		</script>
+
 </body>
 </html>
