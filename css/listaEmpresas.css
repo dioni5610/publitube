@@ -1,55 +1,57 @@
+body,html{ height:100%; margin:0;}
 @media (min-width: 1230px){
 
 /*LOGO*/
-.logo{
+	.logo{
 	 text-align: center;
 	 color: maroon;
-}
+	}
 
 /*BARRA DE MENU PRINCIPAL*/
-	.barraMenu{
-		padding: 0;
-		margin: auto;
-	}
-	.barraMenu li {
-	display: inline;
+  
+  .navbar{
+    background-color: #B40404;
 
-	}
-	.barraMenu li a {
-	font-family: Quicksand , sans-serif;;
-	font-size:20px;
-	text-decoration: none;
-	float:left;
-	padding: 10px;
-	background-color: #B40404;
-	color: #fff;
-	width: 15%; height:25px;
-	}
-	.barraMenu li a:hover {
-	background-color: #FF0000;
-	margin-top:-2px;
-	padding-bottom:12px;
+  }
 
-	}
+  .barraMenu li {
+  display: inline;
+
+  }
+  .barraMenu li a {
+  font-family: Quicksand , sans-serif;;
+  font-size:20px;
+  text-decoration: none;
+  float:left;
+  padding: 10px;
+  background-color: #B40404;
+  color: #fff;
+  width: 15%; 
+  }
+  .barraMenu li a:hover {
+  background-color: #FF0000;
+  margin-top:-2px;
+  padding-bottom:12px;
+
+  }
 
 	
 /*BODY EN GENERAL*/
 	h1{
 	text-align: center;
-}
+	}
 	hr{
 	width: 200px;
     margin-bottom: 40px;
     height: 2px;
     border-style: none;
     background-color: #b10000;
-}
+	}
 	body{
   text-align: center;
   font-family: Quicksand , sans-serif;
 
-}
-
+	}
 
 /*FORMATO DE TABLA*/
 	.tablaEmpresas {
@@ -113,84 +115,90 @@
 	  border-color: #b10000;
 	}
 
+
 /*FOOTER*/
+
 	/*FOOTER PARTE 1*/
-	.pieUno{
-		background-color: #383838;
-		color: white;
-		display: flex;
+  .pieUno{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
 
-		text-align: center;
-		font-family: Quicksand , sans-serif;
-	} 
-	.pieUno hr{
-		width: 100px;
-		margin-bottom: 40px;
-		height: 2px;
-		border-style: none;
-		background-color: red;
+  	text-align: center;
+  	font-family: Quicksand , sans-serif;
+  } 
+  .pieUno hr{
+  	width: 100px;
+      margin-bottom: 40px;
+      height: 2px;
+      border-style: none;
+      background-color: red;
 
-	}
+  }
 
-	.mapaYoutuber{
-		flex: 1;
-	}
-	.mapaEmpresa{
-		flex: 1;
-	}
-	.mapaSitio{
-		flex: 1;
-		text-align: center;
-	}
+  .mapaYoutuber{
+  	flex: 1;
+  }
+  .mapaEmpresa{
+  	flex: 1;
+  }
+  .mapaSitio{
+  	flex: 1;
+  	text-align: center;
+  }
 
-	.listaSitio{
-		list-style-type: none;
+    .pieUno a{
+      color: white;
+      list-style-type: none;
+      text-align: center;
 
-	}
-	.listaSitio a{
-		color: white;
-	}
+    }
 
-	/*FOOTER PARTE 2*/
-	.pieDos{
-	background-color: #383838;
-	color: gray;
-	display: flex;
-	text-align: right;
-	font-family:  Quicksand,sans-serif;
-}
+  /*FOOTER PARTE 2*/
+  .pieDos{
+  	background-color: #383838;
+  	color: gray;
+  	display: flex;
+  	text-align: right;
+  	font-family:  Quicksand,sans-serif;
+  }
+
 }
 
 @media (min-width: 577px) and (max-width: 1230px){
 
- /*LOGO*/
+/*LOGO*/
    .logo{
      text-align: center;
   }
  
 /*BARRA DE MENU PRINCIPAL*/
-  .barraMenu{
-    padding: 0;
-    margin: auto;
+
+  .navbar{
+    background-color: #B40404;
+
   }
+
   .barraMenu li {
   display: inline;
 
   }
   .barraMenu li a {
   font-family: Quicksand , sans-serif;;
-  font-size:15px;
+  font-size:20px;
   text-decoration: none;
   float:left;
   padding: 10px;
   background-color: #B40404;
   color: #fff;
-  width: 13%; height:25px;
+  width: 15%; 
   }
+
   .barraMenu li a:hover {
   background-color: #FF0000;
   margin-top:-2px;
-  padding-bottom:12px;
+  padding-bottom:45px;
+
   }
  
 /*BODY EN GENERAL*/
@@ -254,6 +262,28 @@
 		width='150';  align='center';
 	}
 
+	.tablaEmpresas
+	{
+    	width: 100%;
+    	overflow-y: auto;
+    	_overflow: auto;
+    	margin: 0 0 1em;
+	}
+	/* añadimos las barras para dispositivos IOS */
+
+	.tablaEmpresas::-webkit-scrollbar
+	{
+	    -webkit-appearance: none;
+	    width: 14px;
+    	height: 14px;
+	}
+	.tablaEmpresas::-webkit-scrollbar-thumb
+	{
+	    border-radius: 8px;
+	    border: 3px solid #fff;
+	    background-color: rgba(0, 0, 0, .3);
+	}
+
 /*BOTONES*/
 	.btn{
 	  background:#B40404;
@@ -297,17 +327,18 @@
 	}
 
 /*FOOTER*/
+
 	/*FOOTER PARTE 1*/
-	.pieUno{
-    background-color: #383838;
-    color: white;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    font-family: Quicksand , sans-serif;
+  .pieUno{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
+
+  	text-align: center;
+  	font-family: Quicksand , sans-serif;
   } 
-	.pieUno hr{
-    width: 100px;
+  .pieUno hr{
+  	width: 100px;
       margin-bottom: 40px;
       height: 2px;
       border-style: none;
@@ -316,31 +347,30 @@
   }
 
   .mapaYoutuber{
-    flex: 1;
+  	flex: 1;
   }
   .mapaEmpresa{
-    flex: 1;
+  	flex: 1;
   }
   .mapaSitio{
-    flex: 1;
-    text-align: center;
+  	flex: 1;
+  	text-align: center;
   }
 
-  .listaSitio{
-    list-style-type: none;
+    .pieUno a{
+      color: white;
+      list-style-type: none;
+      text-align: center;
 
-  }
-  .listaSitio a{
-    color: white;
-  }
-	
-	/*FOOTER PARTE 2*/
+    }
+
+  /*FOOTER PARTE 2*/
   .pieDos{
-    background-color: #383838;
-    color: white;
-    display: flex;
-    text-align: center;
-    font-family:  Quicksand,sans-serif;
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
+  	text-align: right;
+  	font-family:  Quicksand,sans-serif;
   }
 
 }
@@ -354,30 +384,37 @@
   }
  
 /*BARRA DE MENU PRINCIPAL*/
+
+  .navbar{
+    background-color: #B40404;
+    
+  }
+
   .barraMenu{
     padding: 0;
     margin: auto;
   }
   .barraMenu li {
   display: inline;
+
   }
   .barraMenu li a {
   font-family: Quicksand , sans-serif;;
-  font-size: 20px;
+  font-size:20px;
   text-decoration: none;
   float:left;
   padding: 10px;
   background-color: #B40404;
   color: #fff;
-  width: 100%; height:25px;
+  width: 100%;
   }
   .barraMenu li a:hover {
   background-color: #FF0000;
   margin-top:-2px;
   padding-bottom:12px;
   }
-  
- /*FORMATO DE TABLA*/  
+
+/*FORMATO DE TABLA*/  
 	.tablaEmpresas {
 		font: normal 12px/150% Arial; 
 		background: #fff; 
@@ -412,11 +449,29 @@
 	.totalLista {
 		width='150';  align='center';
 	}
-	
-	
 
-	 
-  
+	.tablaEmpresas
+	{
+    	width: 100%;
+    	overflow-y: auto;
+    	_overflow: auto;
+    	margin: 0 0 1em;
+	}
+	/* añadimos las barras para dispositivos IOS */
+
+	.tablaEmpresas::-webkit-scrollbar
+	{
+	    -webkit-appearance: none;
+	    width: 14px;
+    	height: 14px;
+	}
+	.tablaEmpresas::-webkit-scrollbar-thumb
+	{
+	    border-radius: 8px;
+	    border: 3px solid #fff;
+	    background-color: rgba(0, 0, 0, .3);
+	}
+
   
 /*BODY EN GENERAL*/
 	body{
@@ -484,17 +539,18 @@
 	}
 
 /*FOOTER*/
+
 	/*FOOTER PARTE 1*/
-	.pieUno{
-    background-color: #383838;
-    color: white;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    font-family: Quicksand , sans-serif;
+  .pieUno{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
+
+  	text-align: center;
+  	font-family: Quicksand , sans-serif;
   } 
-	.pieUno hr{
-    width: 100px;
+  .pieUno hr{
+  	width: 100px;
       margin-bottom: 40px;
       height: 2px;
       border-style: none;
@@ -502,32 +558,31 @@
 
   }
 
-	.mapaYoutuber{
-    flex: 1;
+  .mapaYoutuber{
+  	flex: 1;
   }
-	.mapaEmpresa{
-    flex: 1;
+  .mapaEmpresa{
+  	flex: 1;
   }
-	.mapaSitio{
-    flex: 1;
-    text-align: center;
-  }
-
-	.listaSitio{
-    list-style-type: none;
-
-  }
-	.listaSitio a{
-    color: white;
+  .mapaSitio{
+  	flex: 1;
+  	text-align: center;
   }
 
-	/*FOOTER PARTE 2*/
-	.pieDos{
-    background-color: #383838;
-    color: white;
-    display: flex;
-    text-align: center;
-    font-family:  Quicksand,sans-serif;
+    .pieUno a{
+      color: white;
+      list-style-type: none;
+      text-align: center;
+
+    }
+
+  /*FOOTER PARTE 2*/
+  .pieDos{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
+  	text-align: right;
+  	font-family:  Quicksand,sans-serif;
   }
 
 }
