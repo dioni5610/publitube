@@ -5,6 +5,7 @@
 
 	<title>Lista de Youtubers</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/listadoYoutuberAdmin.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
 </head>
@@ -14,86 +15,109 @@
 		<div class="logo">
 			<img src="../images/logo.png" alt=""width="200" height="75" >
 		</div>
-
-		<div>
-			<ul class="barraMenu">
-					<li><a href="../index.html" title="Inicio">Inicio</a></li>
-					<li><a href="#" title="Enlace genérico">¿Quienes somos?</a></li>
-					<li><a href="../views/terminos.html" title="terminos">Información</a></li>
-					<li><a href="../views/contacto.html" title="Contacto">Contacto</a></li>
-					<li><a href="../views/eligeRegistro.html" title="Registro">Registro</a></li>
-					<li><a href="../views/maquetaPreguntas.html" title="FAQ">FAQ</a></li>
-			</ul>
-		</div> 
-	</header>
-
+		<br>
+			<nav class="navbar navbar-default">
+					<ul class="barraMenu">
+						<li><a href="../index.html" title="Inicio">Inicio</a></li>
+						<li><a href="quienesSomos.html" title="QuienesSomos">¿Quiénes somos?</a></li>
+						<li><a href="terminos.html" title="terminos">Información</a></li>
+						<li><a href="contacto.html" title="Contacto">Contacto</a></li>
+						<li><a href="eligeRegistro.html" title="Registro">Registro</a></li>
+						<li><a href="maquetaPreguntas.html" title="FAQ">FAQ</a></li>
+					</ul>
+			</nav>
+		</header>
+	<h2>Youtubers Registrados</h2>
+	<hr>
+	<br>
 	<!--Listado Youtubers-->
-	<table border="1">
-		<caption>Youtubers Registrados</caption>
-		<tr>
-			<th scope="col" id="imagen">Imagen</th>
-			<th scope="col" id="nombre">Nombre</th>
-			<th scope="col" id="subscriptores">Subscriptores</th>
-			<th scope="col" id="categoria">Categoria</th>
-			<th scope="col" id="link">Link</th>
-			<th scope="col" id="contacto">Contactar</th>
-		</tr>
+	<div class = "tablaEmpresas">
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Imagen</th> 
+					<th>Nombre</th>
+					<th>Subscriptores</th>
+					<th>Categoría</th>
+					<th>Link</th>
+					<th>Videos</th>
+					<th>Modificar</th>
+					<th>Eliminar</th>
+				</tr>
+			</thead>
 
-		<tr>
-			<td headers="imagen"><img src="../images/julio.jpeg" alt="" width="141" height="130"></td>
-			<td headers="nombre">Julio Profe</td>
-			<td headers="subscriptores">1.491.194</td>
-			<td headers="categoria">Educativo</td>
-			<td headers="link">https://www.youtube.com/user/julioprofe</td>
-			<td headers="contacto"><input type="button" value="Contactar"></td>
-		</tr>
+			<tbody>
+				<tr>
+					<td headers="imagen"><img src="../images/julio.jpeg" alt="" width="141" height="130"></td>
+					<td headers="nombre">Julio Profe</td>
+					<td headers="subscriptores">1.491.194</td>
+					<td headers="categoria">Educativo</td>
+					<td headers="link">https://www.youtube.com/user/julioprofe</td>
+					<td headers="imagen"><a href="../views/videosYoutuberAdmin.html"><img src="../images/video.png" alt="" width="50" height="50"></a></td>
+					<td headers="imagen"><a href="../views/modificarYoutuberAdmin.html"><img src="../images/modify.png" alt="" width="50" height="50"></a></td>
+					<td headers="imagen"><img src="../images/trash.png" alt="" width="50" height="50"></td>
+				</tr>
 
-		<tr>
-			<td headers="imagen"><img src="../images/elrubius.jpg" alt="" width="141" height="130"></td>
-			<td headers="nombre">ElrubiusOMG</td>
-			<td headers="subscriptores">23.248.456</td>
-			<td headers="categoria">Gameplays</td>
-			<td headers="link">https://www.youtube.com/user/elrubiusOMG</td>
-			<td headers="contacto"><input type="button" value="Contactar"></td>
-		</tr>
-	</table>
-		<button class="btn" type="submit">Agregar</button>
-		<button class="btn" type="submit">Eliminar</button>
-		<button class="btn" type="submit">Modificar</button>
-		<br><br><br><br><br><br><br><br><br><br>
+				<tr>
+					<td headers="imagen"><img src="../images/elrubius.jpg" alt="" width="141" height="130"></td>
+					<td headers="nombre">ElrubiusOMG</td>
+					<td headers="subscriptores">23.248.456</td>
+					<td headers="categoria">Gameplays</td>
+					<td headers="link">https://www.youtube.com/user/elrubiusOMG</td>
+					<td headers="imagen"><a href="../views/videosYoutuberAdmin.html"><img src="../images/video.png" alt="" width="50" height="50"></a></td>
+					<td headers="imagen"><a href="../views/modificarYoutuberAdmin.html"><img src="../images/modify.png" alt="" width="50" height="50"></a></td>
+					<td headers="imagen"><img src="../images/trash.png" alt="" width="50" height="50"></td>
+				</tr>
+			</tbody>
+
+			<thead>
+				<tr>
+					<th class="footLista"colspan='9'; rowspan='9';></th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+		
+		<a class="btn" href="agregaYoutuber.html">Agregar</a>
+
 	<div>
 		
 	</div>
 	<!-- plantilla footer-->
-	<br><br><br>
-	<footer>
-		<div class="pieUno">
-			<div class ="mapaYoutuber">
-				<h5>YOUTUBERS</h5>
-				<hr>
-			</div>
+		<br><br><br>
 
-			<div class ="mapaEmpresa">
-				<h5>EMPRESAS</h5>
-				<hr>
-			</div>
+		<footer id="footer">
+			<div class="pieUno">
+				<div class ="mapaYoutuber">
+					<h4>SÍGUENOS</h4>
+					<hr>
+						<img src="../images/youtubeIcon.png" alt="" width="40" height="40">
+						<img src="../images/faceIcon.png" alt="" width="40" height="40">
+						<img src="../images/twittIcon.png" alt="" width="40" height="40">
+						<img src="../images/instaIcon.png" alt="" width="40" height="40">
+				</div>
 
-			<div class ="mapaSitio">
-				<h5>MAPA DE SITIO</h5>
-				<hr>
-				<ul class="listaSitio">
-						<li><a href="../index.html">Inicio</a></li>
-						<li><a href="">¿Quiénes somos?</a></li>
-						<li><a href="">Información</a></li>
-						<li><a href="../views/contacto.html" title="Contacto">Contacto</a></li>
-						<li><a href="../views/eligeRegistro.html">Registro</a></li>
-						<li><a href="../views/maquetaPreguntas.html">FAQ</a></li>
-				</ul>
+				<div class ="mapaSitio">
+					<h4>CONTENIDO</h4>
+					<hr>
+						<a href="../index.html">Inicio</a><br>
+						<a href="quienesSomos.html" title="QuienesSomos">¿Quiénes somos?</a><br>
+						<a href="terminos.html" title="terminos">Información</a><br>
+						<a href="contacto.html" title="Contacto">Contacto</a><br>
+						<a href="eligeRegistro.html" title="Registro">Registro</a><br>
+						<a href="maquetaPreguntas.html" title="FAQ">FAQ</a><br>
+				</div>
+
+				<div class ="mapaEmpresa">
+					<h4>LEGALIDAD</h4>
+					<hr>
+						<a href="terminos.html">Aviso de privacidad</a><br>
+						<a href="terminos.html">Términos y condiciones</a><br>
+				</div>
 			</div>
-		</div>
-		<div class = "pieDos">
-			<p>&copy 2017 PubliMex - Publicidad empresarial por bloggeros.		Tel.12233445</p>
-		</div>
-	</footer>
-</body>
+			<div class = "pieDos">
+				<p>© 2017 PubliTube - Publicidad empresarial por bloggeros.		Tel.12233445</p>
+			</div>
+		</footer>
+	</body>
 </html>

@@ -1,3 +1,4 @@
+body,html{ height:100%; margin:0;}
 @media (min-width: 1230px){
 
 /*LOGO*/
@@ -7,30 +8,32 @@
 }
 
 /*BARRA DE MENU PRINCIPAL*/
-	.barraMenu{
-		padding: 0;
-		margin: auto;
-	}
-	.barraMenu li {
-	display: inline;
+  
+  .navbar{
+    background-color: #B40404;
 
-	}
-	.barraMenu li a {
-	font-family: Quicksand , sans-serif;;
-	font-size:20px;
-	text-decoration: none;
-	float:left;
-	padding: 10px;
-	background-color: #B40404;
-	color: #fff;
-	width: 15%; height:25px;
-	}
-	.barraMenu li a:hover {
-	background-color: #FF0000;
-	margin-top:-2px;
-	padding-bottom:12px;
+  }
 
-	}
+  .barraMenu li {
+  display: inline;
+
+  }
+  .barraMenu li a {
+  font-family: Quicksand , sans-serif;;
+  font-size:20px;
+  text-decoration: none;
+  float:left;
+  padding: 10px;
+  background-color: #B40404;
+  color: #fff;
+  width: 15%; 
+  }
+  .barraMenu li a:hover {
+  background-color: #FF0000;
+  margin-top:-2px;
+  padding-bottom:12px;
+
+  }
 
 /*BODY EN GENERAL*/
 	hr{
@@ -50,7 +53,7 @@
 	}
 	h1{
 	  font-size:1.5em;
-	  color:#525252;
+	  color: black;
 	}
 	
 
@@ -77,52 +80,53 @@
 	}
 
 
+
 /*FOOTER*/
-	/*FOOTER PARTE 1*/
-	.pieUno{
-		background-color: #383838;
-		color: white;
-		display: flex;
 
-		text-align: center;
-		font-family: Quicksand , sans-serif;
-	} 
-	.pieUno hr{
-		width: 100px;
-		margin-bottom: 40px;
-		height: 2px;
-		border-style: none;
-		background-color: red;
+  /*FOOTER PARTE 1*/
+  .pieUno{
+    background-color: #383838;
+    color: white;
+    display: flex;
 
-	}
+    text-align: center;
+    font-family: Quicksand , sans-serif;
+  } 
+  .pieUno hr{
+    width: 100px;
+      margin-bottom: 40px;
+      height: 2px;
+      border-style: none;
+      background-color: red;
 
-	.mapaYoutuber{
-		flex: 1;
-	}
-	.mapaEmpresa{
-		flex: 1;
-	}
-	.mapaSitio{
-		flex: 1;
-		text-align: center;
-	}
+  }
 
-	.listaSitio{
-		list-style-type: none;
+  .mapaYoutuber{
+    flex: 1;
+  }
+  .mapaEmpresa{
+    flex: 1;
+  }
+  .mapaSitio{
+    flex: 1;
+    text-align: center;
+  }
 
-	}
-	.listaSitio a{
-		color: white;
-	}
+    .pieUno a{
+      color: white;
+      list-style-type: none;
+      text-align: center;
 
-	/*FOOTER PARTE 2*/
-	.pieDos{
-	background-color: #383838;
-	color: white;
-	display: flex;
-	text-align: right;
-	font-family:  Quicksand,sans-serif;
-}
+    }
+
+  /*FOOTER PARTE 2*/
+  .pieDos{
+    background-color: #383838;
+    color: white;
+    display: flex;
+    text-align: right;
+    font-family:  Quicksand,sans-serif;
+  }
 
 }
 
@@ -135,62 +139,57 @@
   }
 
 /*BARRA DE MENU PRINCIPAL*/
-  .barraMenu{
-    padding: 0;
-    margin: auto;
+
+  .navbar{
+    background-color: #B40404;
+
   }
+
   .barraMenu li {
   display: inline;
 
   }
   .barraMenu li a {
   font-family: Quicksand , sans-serif;;
-  font-size:15px;
+  font-size:20px;
   text-decoration: none;
   float:left;
   padding: 10px;
   background-color: #B40404;
   color: #fff;
-  width: 13%; height:25px;
+  width: 15%; 
   }
+
   .barraMenu li a:hover {
   background-color: #FF0000;
   margin-top:-2px;
-  padding-bottom:12px;
+  padding-bottom:45px;
+
   }
 
 
-/*BODY EN GENERAL*/
-	.contenedorUno{
-		display: flex;
 
-	}
-	.contenedorUno h1{
-			color:black;
-		}
-	body{
-		text-align: center;
-		font-family: Quicksand , sans-serif;
-		
-	  }
-	body h1{
-		color: black;
-		
-	  }
-	body hr{
-		width: 200px;
-		  margin-bottom: 40px;
-		  height: 2px;
-		  border-style: none;
-		  background-color: #b10000;
-		}
-	h1{
-		font-size:1.5em;
-		color:#525252;
-	  }
-	p{
-		color: gray;
-	  }
+/*BODY EN GENERAL*/
+  hr{
+    width: 200px;
+    margin-bottom: 40px;
+    height: 2px;
+    border-style: none;
+    background-color: #b10000;
+  }
+  p{
+    color: gray;
+  }
+  body{
+    text-align: center;
+    font-family: Quicksand , sans-serif;
+
+  }
+  h1{
+    font-size:1.5em;
+    color: black;
+  }
+  
 
 /*BOTONES*/
 	.btn{
@@ -215,19 +214,18 @@
 	}
 
 
-
-
 /*FOOTER*/
-	/*FOOTER PARTE 1*/
-	.pieUno{
+
+  /*FOOTER PARTE 1*/
+  .pieUno{
     background-color: #383838;
     color: white;
     display: flex;
-    width: 100%;
+
     text-align: center;
     font-family: Quicksand , sans-serif;
   } 
-	.pieUno hr{
+  .pieUno hr{
     width: 100px;
       margin-bottom: 40px;
       height: 2px;
@@ -236,31 +234,30 @@
 
   }
 
-	.mapaYoutuber{
+  .mapaYoutuber{
     flex: 1;
   }
-	.mapaEmpresa{
+  .mapaEmpresa{
     flex: 1;
   }
-	.mapaSitio{
+  .mapaSitio{
     flex: 1;
     text-align: center;
   }
 
-	.listaSitio{
-    list-style-type: none;
+    .pieUno a{
+      color: white;
+      list-style-type: none;
+      text-align: center;
 
-  }
-	.listaSitio a{
-    color: white;
-  }
-	
-	/*FOOTER PARTE 2*/
+    }
+
+  /*FOOTER PARTE 2*/
   .pieDos{
     background-color: #383838;
     color: white;
     display: flex;
-    text-align: center;
+    text-align: right;
     font-family:  Quicksand,sans-serif;
   }
 
@@ -276,6 +273,12 @@
   }
 
 /*BARRA DE MENU PRINCIPAL*/
+
+  .navbar{
+    background-color: #B40404;
+    
+  }
+
   .barraMenu{
     padding: 0;
     margin: auto;
@@ -292,7 +295,7 @@
   padding: 10px;
   background-color: #B40404;
   color: #fff;
-  width: 100%; height:25px;
+  width: 100%;
   }
   .barraMenu li a:hover {
   background-color: #FF0000;
@@ -301,39 +304,26 @@
   }
 
 /*BODY EN GENERAL*/
-	.contenedorUno hr{
-	width: 200px;
-      margin-bottom: 40px;
-      height: 2px;
-      border-style: none;
-      background-color: #b10000;
+  hr{
+    width: 200px;
+    margin-bottom: 40px;
+    height: 2px;
+    border-style: none;
+    background-color: #b10000;
   }
-	.contenedorUno h1{
-	  color: black;
+  p{
+    color: gray;
   }
-	body{
+  body{
     text-align: center;
     font-family: Quicksand , sans-serif;
 
   }
-	body h1{
-    color: black;
-	
-  }
-	body hr{
-	width: 200px;
-      margin-bottom: 40px;
-      height: 2px;
-      border-style: none;
-      background-color: #b10000;
-	}
-	h1{
+  h1{
     font-size:1.5em;
-    color:#525252;
+    color: black;
   }
-	p{
-    color: gray;
-  }
+  
   
 /*BOTONES*/
 	.btn{
@@ -352,22 +342,25 @@
   font-weight:800;
   font-size:0.8em;
 }
-	.btn:hover{
+
+  .btn:hover{
   background: white; 
   color: red;	
-}
+  }
+
 
 /*FOOTER*/
-	/*FOOTER PARTE 1*/
-    .pieUno{
+
+  /*FOOTER PARTE 1*/
+  .pieUno{
     background-color: #383838;
     color: white;
     display: flex;
-    width: 100%;
+
     text-align: center;
     font-family: Quicksand , sans-serif;
   } 
-	.pieUno hr{
+  .pieUno hr{
     width: 100px;
       margin-bottom: 40px;
       height: 2px;
@@ -376,31 +369,30 @@
 
   }
 
-	.mapaYoutuber{
+  .mapaYoutuber{
     flex: 1;
   }
-	.mapaEmpresa{
+  .mapaEmpresa{
     flex: 1;
   }
-	.mapaSitio{
+  .mapaSitio{
     flex: 1;
     text-align: center;
   }
 
-	.listaSitio{
-    list-style-type: none;
+    .pieUno a{
+      color: white;
+      list-style-type: none;
+      text-align: center;
 
-  }
-	.listaSitio a{
-    color: white;
-  }
+    }
 
-	/*FOOTER PARTE 2*/
-	.pieDos{
+  /*FOOTER PARTE 2*/
+  .pieDos{
     background-color: #383838;
     color: white;
     display: flex;
-    text-align: center;
+    text-align: right;
     font-family:  Quicksand,sans-serif;
   }
 

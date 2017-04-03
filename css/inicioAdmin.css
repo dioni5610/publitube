@@ -1,36 +1,39 @@
+body,html{ height:100%; margin:0;}
 @media (min-width: 1230px){
 
 /*LOGO*/
 	.logo{
 	 text-align: center;
 	 color: maroon;
-}
+  }
 
 /*BARRA DE MENU PRINCIPAL*/
-	.barraMenu{
-		padding: 0;
-		margin: auto;
-	}
-	.barraMenu li {
-	display: inline;
+  
+  .navbar{
+    background-color: #B40404;
 
-	}
-	.barraMenu li a {
-	font-family: Quicksand , sans-serif;;
-	font-size:20px;
-	text-decoration: none;
-	float:left;
-	padding: 10px;
-	background-color: #B40404;
-	color: #fff;
-	width: 15%; height:25px;
-	}
-	.barraMenu li a:hover {
-	background-color: #FF0000;
-	margin-top:-2px;
-	padding-bottom:12px;
+  }
 
-	}
+  .barraMenu li {
+  display: inline;
+
+  }
+  .barraMenu li a {
+  font-family: Quicksand , sans-serif;;
+  font-size:20px;
+  text-decoration: none;
+  float:left;
+  padding: 10px;
+  background-color: #B40404;
+  color: #fff;
+  width: 15%; 
+  }
+  .barraMenu li a:hover {
+  background-color: #FF0000;
+  margin-top:-2px;
+  padding-bottom:12px;
+
+  }
 
 	
 /*BODY EN GENERAL*/
@@ -48,7 +51,7 @@
 	}
 	h1{
 	  font-size:1.5em;
-	  color:#525252;
+	  color:black;
 	}
 	p{
 		color: gray;
@@ -78,53 +81,52 @@
 	}
 
 
-
 /*FOOTER*/
+
 	/*FOOTER PARTE 1*/
-	.pieUno{
-		background-color: #383838;
-		color: white;
-		display: flex;
+  .pieUno{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
 
-		text-align: center;
-		font-family: Quicksand , sans-serif;
-	} 
-	.pieUno hr{
-		width: 100px;
-		margin-bottom: 40px;
-		height: 2px;
-		border-style: none;
-		background-color: red;
+  	text-align: center;
+  	font-family: Quicksand , sans-serif;
+  } 
+  .pieUno hr{
+  	width: 100px;
+      margin-bottom: 40px;
+      height: 2px;
+      border-style: none;
+      background-color: red;
 
-	}
+  }
 
-	.mapaYoutuber{
-		flex: 1;
-	}
-	.mapaEmpresa{
-		flex: 1;
-	}
-	.mapaSitio{
-		flex: 1;
-		text-align: center;
-	}
+  .mapaYoutuber{
+  	flex: 1;
+  }
+  .mapaEmpresa{
+  	flex: 1;
+  }
+  .mapaSitio{
+  	flex: 1;
+  	text-align: center;
+  }
 
-	.listaSitio{
-		list-style-type: none;
+    .pieUno a{
+      color: white;
+      list-style-type: none;
+      text-align: center;
 
-	}
-	.listaSitio a{
-		color: white;
-	}
+    }
 
-	/*FOOTER PARTE 2*/
-	.pieDos{
-		background-color: #383838;
-		color: white;
-		display: flex;
-		text-align: right;
-		font-family:  Quicksand,sans-serif;
-	}
+  /*FOOTER PARTE 2*/
+  .pieDos{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
+  	text-align: right;
+  	font-family:  Quicksand,sans-serif;
+  }
 
 }
 
@@ -135,32 +137,36 @@
      text-align: center;
   }
 
-/*BARRA DE MENU PRINCIPAL*/  
-  .barraMenu{
-    padding: 0;
-    margin: auto;
+/*BARRA DE MENU PRINCIPAL*/
+
+  .navbar{
+    background-color: #B40404;
+
   }
+
   .barraMenu li {
   display: inline;
 
   }
   .barraMenu li a {
   font-family: Quicksand , sans-serif;;
-  font-size:15px;
+  font-size:20px;
   text-decoration: none;
   float:left;
   padding: 10px;
   background-color: #B40404;
   color: #fff;
-  width: 13%; height:25px;
+  width: 15%; 
   }
+
   .barraMenu li a:hover {
   background-color: #FF0000;
   margin-top:-2px;
-  padding-bottom:12px;
+  padding-bottom:45px;
+
   }
- 
- /*BODY EN GENERAL*/
+
+/*BODY EN GENERAL*/
 	body{
 		text-align: center;
 		font-family: Quicksand , sans-serif;
@@ -200,19 +206,20 @@
 	  color: red;
 	}
 
-	
+
 /*FOOTER*/
+
 	/*FOOTER PARTE 1*/
-	.pieUno{
-    background-color: #383838;
-    color: white;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    font-family: Quicksand , sans-serif;
+  .pieUno{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
+
+  	text-align: center;
+  	font-family: Quicksand , sans-serif;
   } 
-	.pieUno hr{
-    width: 100px;
+  .pieUno hr{
+  	width: 100px;
       margin-bottom: 40px;
       height: 2px;
       border-style: none;
@@ -220,32 +227,31 @@
 
   }
 
-	.mapaYoutuber{
-    flex: 1;
+  .mapaYoutuber{
+  	flex: 1;
   }
-	.mapaEmpresa{
-    flex: 1;
+  .mapaEmpresa{
+  	flex: 1;
   }
-	.mapaSitio{
-    flex: 1;
-    text-align: center;
+  .mapaSitio{
+  	flex: 1;
+  	text-align: center;
   }
 
-	.listaSitio{
-    list-style-type: none;
+    .pieUno a{
+      color: white;
+      list-style-type: none;
+      text-align: center;
 
-  }
-	.listaSitio a{
-    color: white;
-  }
-	
-	/*FOOTER PARTE 2*/
-	.pieDos{
-    background-color: #383838;
-    color: white;
-    display: flex;
-    text-align: center;
-    font-family:  Quicksand,sans-serif;
+    }
+
+  /*FOOTER PARTE 2*/
+  .pieDos{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
+  	text-align: right;
+  	font-family:  Quicksand,sans-serif;
   }
 
 }
@@ -258,6 +264,12 @@
   }
 
 /*BARRA DE MENU PRINCIPAL*/
+
+  .navbar{
+    background-color: #B40404;
+    
+  }
+
   .barraMenu{
     padding: 0;
     margin: auto;
@@ -274,7 +286,7 @@
   padding: 10px;
   background-color: #B40404;
   color: #fff;
-  width: 100%; height:25px;
+  width: 100%;
   }
   .barraMenu li a:hover {
   background-color: #FF0000;
@@ -304,7 +316,7 @@
   }
 	.contenedorUno{
 	display: flex;
-}
+  }
 
   
 /*BOTONES*/
@@ -323,25 +335,26 @@
   margin-left:16px;
   font-weight:800;
   font-size:0.8em;
-}
+  }
 	.btn:hover{
   background: white; 
   color: red;	
-}
+  }
 
 
 /*FOOTER*/
+
 	/*FOOTER PARTE 1*/
-    .pieUno{
-    background-color: #383838;
-    color: white;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    font-family: Quicksand , sans-serif;
+  .pieUno{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
+
+  	text-align: center;
+  	font-family: Quicksand , sans-serif;
   } 
-	.pieUno hr{
-    width: 100px;
+  .pieUno hr{
+  	width: 100px;
       margin-bottom: 40px;
       height: 2px;
       border-style: none;
@@ -349,32 +362,31 @@
 
   }
 
-	.mapaYoutuber{
-    flex: 1;
+  .mapaYoutuber{
+  	flex: 1;
   }
-	.mapaEmpresa{
-    flex: 1;
+  .mapaEmpresa{
+  	flex: 1;
   }
-	.mapaSitio{
-    flex: 1;
-    text-align: center;
-  }
-
-	.listaSitio{
-    list-style-type: none;
-
-  }
-	.listaSitio a{
-    color: white;
+  .mapaSitio{
+  	flex: 1;
+  	text-align: center;
   }
 
-	/*FOOTER PARTE 2*/
-	.pieDos{
-    background-color: #383838;
-    color: white;
-    display: flex;
-    text-align: center;
-    font-family:  Quicksand,sans-serif;
+    .pieUno a{
+      color: white;
+      list-style-type: none;
+      text-align: center;
+
+    }
+
+  /*FOOTER PARTE 2*/
+  .pieDos{
+  	background-color: #383838;
+  	color: white;
+  	display: flex;
+  	text-align: right;
+  	font-family:  Quicksand,sans-serif;
   }
 
 }
