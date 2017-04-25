@@ -7,12 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/agregaProducto.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageEmpresa.js"></script>
 </head>
-<body>
+<body onload="mostrarAgregaProducto()">
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
-			<img src="../images/logo.png" alt=""width="200" height="75" >
+			<img src="../images/logo.png" alt="" width="200" height="75" >
 		</div>
 		<br>
 			<nav class="navbar navbar-default">
@@ -35,13 +36,13 @@
 			<hr class="SeparadorDatos">
 		</div>
 		<br>
-	 	<form>
+	 	<form name="agregaProducto">
 	  		<table class="formularioEmpresa">
-		    	<tr><td>Foto:</td><td><input type="file" name="url" class="filechooser"/></td></tr>
-		    	<tr><td>Nombre:</td><td><input type="text" name="url" class="url" /></td></tr>
-		    	<tr><td>Colaborador:</td><td><input type="text" name="url" class="url"/> <button>Agregar otro colaborador</button></td></tr>
-		    	<tr><td>Patrocinador:</td><td><input type="text" name="url" class="url"/><button>Agregar otro patrocinador</button></td></tr>
-		    	<tr><td>Descripción:</td><td><textarea class="url" name="message" rows="7" cols="30"></textarea></td></tr>
+		    	<tr><td>Foto:</td><td><input type="file" name="foto" class="filechooser"/></td></tr>
+		    	<tr><td>Nombre:</td><td><input type="text" name="nombreAgreProd" id="nombreAgreProd" class="url" onblur="guardarAgregaProducto()"/></td></tr>
+		    	<tr><td>Colaborador:</td><td><input type="text" name="colaboradores" class="url"/> <button>Agregar otro colaborador</button></td></tr>
+		    	<tr><td>Patrocinador:</td><td><input type="text" name="patrocinadores" class="url"/><button>Agregar otro patrocinador</button></td></tr>
+		    	<tr><td>Descripción:</td><td><textarea class="url" name="descripcionAgreProd" id="descripcionAgreProd" rows="7" cols="30" onblur="guardarAgregaProducto()"></textarea></td></tr>
 		    	<tr><td><input class = "btn2" type="button" value="Agregar"> </td><td><a class = "btn2" type="button" href="ListadoProductos.html">Cancelar</a></td></tr>
 	  		</table>
 		</form>

@@ -7,8 +7,20 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/registroyoutubers.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageIndex.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/manejoDOM.js"></script>
 </head>
-<body>
+<body onload="mostrarRegistroYoutuber()"> 
+	<div class="vtnFondoN">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
+			<h3>BIENVENIDO A PUBLITUBE</h3>
+			<hr>
+			<button>Aceptar</button>
+			</div>
+	</div> 
+
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
@@ -30,69 +42,61 @@
 	<label class="llene">Llene Formulario de Registro</label>
 	<hr>
 	<section>
-		<form action="controlyoutubers.html" method="get"> <!--tambien se puede post, con get se ven los datos en la url-->
-
+		<form name="registroYoutuber" action="controlyoutubers.html" method="get"> <!--tambien se puede post, con get se ven los datos en la url-->
 			<div class="box"> 
-
-				
 				<br>
 				<div>	
 					<label for="nombreusuario">Nombre de usuario</label>
-					<input type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de usuario" align="right">
+					<input type="text" name="nombreUsuarioRegYou" id="nombreUsuarioRegYou" onblur="guardarRegistroYoutuber()" placeholder="Nombre de usuario" align="right">
 				</div>
 				<br>
 				<div>
 					<label for="password">Password</label>
-					<input type="password" name="Password" id="password" placeholder="Contraseña" >
+					<input type="password" name="passwordRegYou" id="passwordRegYou" placeholder="Contraseña" >
 				</div>
 				<br>
 				<div>
 					<label for="Repassword">Repetir Password</label>
-					<input type="password" name="repassword" id="repassword" placeholder="Repetir Contraseña" >
-				</div>
-				<br>
-				<div>
-					<label for="nombre" >Nombre</label>
-					<input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+					<input type="password" name="repasswordRegYou" id="repasswordRegYou" placeholder="Repetir Contraseña" >
 				</div>
 				<br>
 				<div>	
 					<label for="nombrecanal">Nombre del canal</label>
-					<input type="text" id="nombrecanal" name="nombrecanal" placeholder="Nombre del canal">
+					<input type="text" id="nombrecanalRegYou" name="nombrecanalRegYou" onblur="guardarRegistroYoutuber()" placeholder="Nombre del canal">
 				</div>
 				<br>
 				<div>	
 					<label for="categoria">Categoria del canal</label>
-					<input type="text"  id="categoria" name="categoria" placeholder="Categoria">
+					<input type="text"  id="categoriaRegYou" name="categoriaRegYou" onblur="guardarRegistroYoutuber()" placeholder="Categoria">
 				</div>
 				<br>
 				<div>	
 					<label for="suscriptores">Suscriptores del canal</label>
-					<input type="text"  id="suscriptores" name="suscriptores" placeholder="Suscriptores">
+					<input type="text"  id="suscriptoresRegYou" name="suscriptoresRegYou" onblur="guardarRegistroYoutuber()" placeholder="Suscriptores">
 				</div>
 				<br>
 				<div>
 					<label for="correo">Correo</label>
-					<input type="mail" id="correo" name="correo" placeholder="Correo" />
+					<input type="mail" id="correoRegYou" name="correoRegYou" onblur="guardarRegistroYoutuber()" placeholder="Correo" />
 				</div>
 				<br>
 				<div>	
-					<label for="telefono">Nombre del canal</label>
-					<input type="text"  id="telefono" name="telefono" placeholder="Telefono">
+					<label for="telefono">Telefono</label>
+					<input type="text"  id="telefonoRegYou" name="telefonoRegYou" onblur="guardarRegistroYoutuber()" placeholder="Telefono">
 				</div>
 				<br>
 				<div>
 					<label>Sexo: </label>
 					<br>
-					<input type="radio" name="opcion" value="1" id="opcion1">
+					<input type="radio" name="opcion1RegYou" value="1" id="opcion1RegYou">
 					<label for="opcion1">Femenino</label>
-					<input type="radio" name="opcion" value="2" id="opcion2">
+					<input type="radio" name="opcion2RegYou" value="2" id="opcion2RegYou">
 					<label for="opcion2">Masculino</label>
 				</div>
 
 				<br>
 				<div>
-					<button class="btn2" type="submit">Registrarse</button>
+					<a href="javascript:openFondoNegro();" class = "btn2" type="button">Registrarse</a>
 				</div>
 
 			</div>

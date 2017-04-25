@@ -1,14 +1,24 @@
 <!DOCTYPE <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-	<!--Plantilla Titulo-->
+	<!--Plantilla Titulo--> 
 	<title>Modificar Empresa</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/modificarPerfilEmpresa.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/modificarEmpresaAdmin.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/manejoDOM.js"></script>
 </head>
 <body>
+	<div class="vtnFondoN">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
+			<p>¿Desea guardar las modificaciones?</p>
+			<hr>
+			<button>Confirmar cambios</button><button>Cerrar</button>
+			</div>
+	</div>
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
@@ -45,7 +55,8 @@
 		    	<tr><td>Contraseña:</td><td><input type="text" name="url" class="url" value="contraseña" /></td></tr>
 		    	<tr><td>Telefono de contacto:</td><td><input type="text" name="url" class="url" value="22 2222 22" /></td></tr>
 		    	<tr><td>RFC:</td><td><input type="text" name="url" class="url" value="RFC" /></td></tr>
-		    	<tr><td><input class = "btn2" type="button" value="Guardar Cambios"> </td><td><a class = "btn2" type="button" href="listaEmpresas.html">Cancelar</a></td></tr>
+		    	<tr><td><a href="javascript:openFondoNegro();" class = "btn2" type="button">Guardar Cambios</a></td>
+		    		<td><a class = "btn2" type="button" href="listaEmpresas.html">Cancelar</a></td></tr>
 	  		</table>
 		</form>
 	</div>

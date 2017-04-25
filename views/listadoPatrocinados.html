@@ -8,8 +8,23 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/listadoPatrocinados.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/manejoDOM.js"></script>
 </head>
 <body>
+
+	<div class="vtnFondoN">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
+			<br>
+			<p>Este Item será permanentemente eliminado y no podrá ser recuperado.</p>
+			<p>¿Realmente quiere eliminarlo?</p>
+			<hr>
+			<button>Eliminar</button><button>Cerrar</button>
+			</div>
+		</div>
+
+
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
@@ -36,35 +51,35 @@
 
 		<thead>
 			<tr>
-				<th>Seleccionar</th>
 				<th>Imagen</th> 
 				<th>Nombre</th>
 				<th>Subscriptores</th>
 				<th>Categoría</th>
 				<th>Link</th>
 				<th>Mensaje</th>
+				<th>Eliminar</th>
 			</tr>
 		</thead>
 
 		<tbody>
 		<tr>
-			<td><input type="radio" name="select"></input></td>
 			<td headers="imagen"><img src="../images/julio.jpeg" alt="" width="141" height="130"></td>
 			<td headers="nombre">Julio Profe</td>
 			<td headers="subscriptores">1.491.194</td>
 			<td headers="categoria">Educativo</td>
 			<td headers="link">https://www.youtube.com/user/julioprofe</td>
 			<td headers="contacto"><input type="button" value="Mensaje"></td>
+			<td headers="imagen"><a href="javascript:openFondoNegro();"><img src="../images/trash.png" alt="" width="50" height="50"></a></td>
 		</tr>
 
 		<tr>
-			<td><input type="radio" name="select"></input></td>
 			<td headers="imagen"><img src="../images/elrubius.jpg" alt="" width="141" height="130"></td>
 			<td headers="nombre">ElrubiusOMG</td>
 			<td headers="subscriptores">23.248.456</td>
 			<td headers="categoria">Gameplays</td>
 			<td headers="link">https://www.youtube.com/user/elrubiusOMG</td>
 			<td headers="contacto"><input type="button" value="Mensaje"></td>
+			<td headers="imagen"><a href="javascript:openFondoNegro();"><img src="../images/trash.png" alt="" width="50" height="50"></a></td>
 		</tr>
 		</tbody>
 
@@ -77,7 +92,6 @@
 	<br><br><br>
 	</div>
 		<a class="btn" href="agregaPatrocinado.html">Agregar</a>
-		<a class="btn" href="submit">Eliminar</a>
 		<br><br><br>
 
 

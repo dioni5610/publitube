@@ -7,8 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/agregaPatrocinado.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageEmpresa.js"></script>
 </head>
-<body>
+<body onload ="mostrarAgregaPatrocinado()">
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
@@ -36,9 +37,9 @@
 			<hr class="SeparadorDatos">
 		</div>
 		<br>
-	 	<form>
+	 	<form name="agregaPatrocinado">
 	  		<table class="formularioEmpresa">
-		    	<tr><td>Nombre o ID:</td><td><input type="text" name="url" class="url" /></td></tr>
+		    	<tr><td>Nombre o ID:</td><td><input type="text" name="nombreAgrePatrocina" id="nombreAgrePatrocina" onblur="guardarAgregaPatrocinado()" class="url" /></td></tr>
 		    	<tr><td><input class = "btn2" type="button" value="Agregar"> </td><td><a class = "btn2" type="button" href="listadoPatrocinados.html">Cancelar</a></td></tr>
 
 

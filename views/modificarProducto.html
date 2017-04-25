@@ -7,12 +7,23 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/modificarProducto.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageEmpresa.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/manejoDOM.js"></script>
 </head>
-<body>
+<body onload ="mostrarModificarProducto()">
+	<div class="vtnFondoN">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
+			<p>¿Desea guardar las modificaciones?</p>
+			<hr>
+			<button>Confirmar cambios</button><button>Cerrar</button>
+			</div>
+	</div>
 	<!--Plantilla Cabecera-->
-	<header>
+	<header> 
 		<div class="logo">
-			<img src="../images/logo.png" alt=""width="200" height="75" >
+			<img src="../images/logo.png" alt="" width="200" height="75" >
 		</div>
 		<br>
 			<nav class="navbar navbar-default">
@@ -35,14 +46,15 @@
 			<hr class="SeparadorDatos">
 		</div>
 		<br>
-	 	<form>
+	 	<form name="modificaProducto">
 	  		<table id="formularioEmpresa">
 		    	<tr><td>Foto:</td><td><img src="../images/chispas.jpg" alt="" width="141" height="80" ><input type="file" name="url" class="filechooser"/></td></tr>
-		    	<tr><td>Nombre:</td><td><input type="text" name="url" class="url" value="Chokis"/></td></tr>
+		    	<tr><td>Nombre:</td><td><input type="text" name="nombreModProd" id="nombreModProd" class="url" onblur="guardarModificarProducto()"/></td></tr>
 		    	<tr><td>Colaborador:</td><td><input type="text" name="url" class="url" value="Werevertumorro"/> <button>Agregar otro colaborador</button></td></tr>
 		    	<tr><td>Patrocinador:</td><td><input type="text" name="url" class="url"/><button>Agregar otro patrocinador</button></td></tr>
-		    	<tr><td>Descripción:</td><td><textarea class="url" name="message" rows="7" cols="30">Galletas con chispas de chocolate</textarea></td></tr>
-		    	<tr><td><input class = "btn2" type="button" value="Guardar Cambios"> </td><td><a class = "btn2" type="button" href="ListadoProductos.html">Cancelar</a></td></tr>
+		    	<tr><td>Descripción:</td><td><textarea class="url" name="descripcionModProd" id="descripcionModProd" rows="7" cols="30" onblur="guardarModificarProducto()"></textarea></td></tr>
+		    	<tr><td><a href="javascript:openFondoNegro();" class = "btn2" type="button">Guardar Cambios </td>
+		    		<td><a class = "btn2" type="button" href="ListadoProductos.html">Cancelar</a></td></tr>
 	  		</table>
 		</form>
 	</div>

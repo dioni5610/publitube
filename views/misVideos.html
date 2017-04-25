@@ -8,9 +8,24 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/misVideos.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/manejoDOM.js"></script>
 </head>
 <body>
-	<!--Plantilla Cabecera-->
+
+	<div class="vtnFondoN">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
+			<br>
+			<p>Este Item será permanentemente eliminado y no podrá ser recuperado.</p>
+			<p>¿Realmente quiere eliminarlo?</p>
+			<hr>
+			<button>Eliminar</button><button>Cerrar</button>
+			</div>
+		</div>
+
+
+	<!--Plantilla Cabecera--> 
 	<header>
 		<div class="logo">
 			<img src="../images/logo.png" alt="" width="200" height="75" >
@@ -57,7 +72,7 @@
 			<td headers="categoria">Sprite Pepino</td>
 			<td headers="link">Se realizó el video, en minuto 6:34 está mostrado el producto con todos los detalles</td>
 			<td headers="contacto">APROVADO</td>
-			<td headers="imagen"><img src="../images/trash.png" alt="" width="50" height="50"></td>
+			<td headers="imagen"><a href="javascript:openFondoNegro();"><img src="../images/trash.png" alt="" width="50" height="50"></a></td>
 			<td headers="imagen"><a href="../views/modificarMisVideos.html"><img src="../images/modify.png" alt="" width="50" height="50"></a></td>
 		</tr>
 
@@ -69,7 +84,7 @@
 			<td headers="categoria">Crema Tiny</td>
 			<td headers="link">Ya hice el video, no pude hacer bien el enfoque como se concordó pero si se muestra muy bien el producto</td>
 			<td headers="contacto">PENDIENTE</td>
-			<td headers="imagen"><img src="../images/trash.png" alt="" width="50" height="50"></td>
+			<td headers="imagen"><a href="javascript:openFondoNegro();"><img src="../images/trash.png" alt="" width="50" height="50"></a></td>
 			<td headers="imagen"><a href="../views/modificarMisVideos.html"><img src="../images/modify.png" alt="" width="50" height="50"></a></td>
 		</tr>
 		</tbody>

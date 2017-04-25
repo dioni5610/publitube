@@ -5,12 +5,23 @@
 	<title>Modificar tú Perfil</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/modificarPerfilEmpresa.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/modificarPerfilYoutuber.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/manejoDOM.js"></script>
 </head>
 <body>
+	<div class="vtnFondoN">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
+			<p>¿Desea guardar las modificaciones?</p>
+			<hr>
+			<button>Confirmar cambios</button><button>Cerrar</button>
+			</div>
+	</div>
+
 	<!--Plantilla Cabecera-->
-	<header>
+	<header> 
 		<div class="logo">
 			<img src="../images/logo.png" alt="" width="200" height="75" >
 		</div>
@@ -48,7 +59,7 @@
 		    	<tr><td>Link:</td><td><input type="text" name="url" class="url" value="www.youtube.com/SibolaToons" /></td></tr>
 		    	<tr><td>Correo:</td><td><input type="text" name="url" class="url" value="luisMedgal@gmail.com" /></td></tr>
 		    	<tr><td>Contraseña:</td><td><input type="text" name="url" class="url" value="contraseña" /></td></tr>
-		    	<tr><td><input class = "btn2" type="button" value="Guardar Cambios"> </td><td><a class = "btn2" type="button" href="miPerfilYoutuber.html">Cancelar</a></td></tr>
+		    	<tr><td><a href="javascript:openFondoNegro();" class = "btn2" type="button">Guardar Cambios  </td><td><a class = "btn2" type="button" href="miPerfilYoutuber.html">Cancelar</a></td></tr>
 	  		</table>
 		</form>
 	</div>

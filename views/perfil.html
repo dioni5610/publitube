@@ -7,8 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/perfil.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageEmpresa.js"></script>
 </head>
-<body>
+<body onload="mostrarContactYouEmpre()">
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
@@ -27,7 +28,7 @@
 			</nav>
 		</header>
 	<div id="fotoperfil">
-	<img src="../images/usuario.jpg" alt=""width="200" height="170" >
+	<img src="../images/usuario.jpg" alt="" width="200" height="170" >
 	</div>
 
 	<p>Nombre: Werevertumorro</p>
@@ -37,23 +38,23 @@
 	<br><br>
 	<h1 id="h3">¡Contáctalo!</h1>
 
-	<div>
-		<label for="nombre" >Nombre</label>
-		<input type="text" id="nombre" name="nombre" class="url" placeholder="Nombre" />
-	</div>
-
-	<div>
-		<label for="correo">Correo</label>
-		<input type="mail" id="correo" name="correo" class="url" placeholder="Correo" />
-	</div>
-	<br><br>
-	<div>
-		<label for="Mensaje">Mensaje</label>
+	<form name="ContactYouEmpre">
 		<div>
-			<textarea name="Mensaje" id="Mensaje" class="url" rows="7" cols="30" placeholder="Escribe tu mensaje"></textarea>
+			<label for="nombre" >Nombre</label>
+			<input type="text" id="nombreContactYouEmpre" name="nombreContactYouEmpre" class="url" placeholder="Nombre" onblur="guardarContactYouEmpre()"/>
 		</div>
-	</div>
 
+		<div>
+			<label for="correo">Correo</label>
+			<input type="mail" id="correoContactYouEmpre" name="correoContactYouEmpre" class="url" placeholder="Correo" onblur="guardarContactYouEmpre()"/>
+		</div>
+		<div>
+			<label for="Mensaje">Mensaje</label>
+			<div>
+				<textarea name="MensajeContactYouEmpre" id="MensajeContactYouEmpre" class="url" rows="7" cols="30" placeholder="Escribe tu mensaje" onblur="guardarContactYouEmpre()"></textarea>
+			</div>
+		</div>
+	</form>
 	<!-- plantilla footer-->
 		<br><br><br>
 
