@@ -7,8 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/listadoYoutubersEmpresa.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageEmpresa.js"></script>
 </head>
-<body>
+<body onload ="mostrarListaYouEmpre()">
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
@@ -29,9 +30,10 @@
 	<h2>Youtubers Registrados</h2>
 	<hr>
 	<br>
-	<label></label>
-	<input type="text" name="url" class="url" placeholder="Ingresa el nombre del canal" />
-	<button>Buscar</button>
+	<form name="buscaListadoYouEmpre">
+		<input type="text" name="nombreListaYouEmpre" id="nombreListaYouEmpre" class="url" onblur="guardarListaYouEmpre()" placeholder="Ingresa el nombre del canal" />
+		<button>Buscar</button>
+	</form>
 	<br><br><br>
 
 

@@ -7,12 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/agregarEmpresaAdmin.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageAdmin.js"></script>
 </head>
-<body>
+<body onload="mostrarAgregaEmpreAdm()">
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
-			<img src="../images/logo.png" alt=""width="200" height="75" >
+			<img src="../images/logo.png" alt="" width="200" height="75" >
 		</div>
 		<br>
 			<nav class="navbar navbar-default">
@@ -34,16 +35,16 @@
 			<label class="llene">Llene Formulario de Registro</label>
 			<hr class="SeparadorDatos">
 		</div>
-	 	<form>
+	 	<form name="AgregaEmpreAdm">
 	  		<table class="box">
-		    	<tr><td>Nombre de la Empresa</td><td><input class="email" type="text" maxlength="30" placeholder="ejem. Youtube"></td></tr>
-		    	<tr><td>E-mail</td><td><input class="email" type="email" maxlength="20" placeholder="ejem@ejem"></td></tr>
-		    	<tr><td>Apellidos de Contacto</td><td><input class="email" type="text" maxlength="30" placeholder="ejem. Garcia"></td></tr>
-		    	<tr><td>Nombre del Contacto</td><td><input class="email" type="text" maxlength="20" placeholder="ejem. Dioni"></td></tr>
-		    	<tr><td>Contraseña</td><td><input class="email" type="password" maxlength="30" placeholder="Contraseña123"></td></tr>
-		    	<tr><td>Repita su Contraseña</td><td><input class="email" type="password" maxlength="30" placeholder="Contraseña123"></td></tr>
-		    	<tr><td>Telefono de contacto</td><td><input class="email" type="tel" maxlength="12" placeholder="22 2222 22"></td></tr>
-		    	<tr><td>RFC</td><td><input class="email" type="text" maxlength="12" placeholder="RFC"></td></tr>
+		    	<tr><td>Nombre de la Empresa</td><td><input class="email" name="nombreAgregaEmpreAdm" id="nombreAgregaEmpreAdm" type="text" maxlength="30" placeholder="ejem. Youtube" onblur="guardarAgregaEmpreAdm()"></td></tr> 
+		    	<tr><td>E-mail</td><td><input class="email" name="emailAgregaEmpreAdm" id="emailAgregaEmpreAdm" type="email" maxlength="20" placeholder="ejem@ejem" onblur="guardarAgregaEmpreAdm()"></td></tr>
+		    	<tr><td>Apellidos de Contacto</td><td><input class="email" name="apellidosAgregaEmpreAdm" id="apellidosAgregaEmpreAdm" type="text" maxlength="30" placeholder="ejem. Garcia" onblur="guardarAgregaEmpreAdm()"></td></tr>
+		    	<tr><td>Nombre del Contacto</td><td><input class="email" name="nombreContactoAgregaEmpreAdm" id="nombreContactoAgregaEmpreAdm" type="text" maxlength="20" placeholder="ejem. Dioni" onblur="guardarAgregaEmpreAdm()"></td></tr>
+		    	<tr><td>Contraseña</td><td><input class="email" name="contrasenaAgregaEmpreAdm" id="contrasenaAgregaEmpreAdm" type="password" maxlength="30" placeholder="Contraseña123"></td></tr>
+		    	<tr><td>Repita su Contraseña</td><td><input class="email" name="recontrasenaAgregaEmpreAdm" id="recontrasenaAgregaEmpreAdm" type="password" maxlength="30" placeholder="Contraseña123"></td></tr>
+		    	<tr><td>Telefono de contacto</td><td><input class="email" name="telefonoAgregaEmpreAdm" id="telefonoAgregaEmpreAdm" type="tel" maxlength="12" placeholder="22 2222 22" onblur="guardarAgregaEmpreAdm()"></td></tr>
+		    	<tr><td>RFC</td><td><input class="email" name="rfcAgregaEmpreAdm" id="rfcAgregaEmpreAdm" type="text" maxlength="12" placeholder="RFC" onblur="guardarAgregaEmpreAdm()"></td></tr>
 
 		    	<tr><td><input class = "btn" type="submit"> </td><td><input class = "btn2" type="reset"></td></tr>
 	  		</table>

@@ -7,12 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/registroyoutubers.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageAdmin.js"></script>
 </head>
-<body>
+<body onload="mostrarAgregaYouAdm()">
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
-			<img src="../images/logo.png" alt=""width="200" height="75" >
+			<img src="../images/logo.png" alt="" width="200" height="75" >
 		</div>
 		<br>
 			<nav class="navbar navbar-default">
@@ -30,55 +31,53 @@
 	<label class="llene">Llene Formulario de Registro</label>
 	<hr>
 	<section>
-		<form action="controlyoutubers.html" method="get"> <!--tambien se puede post, con get se ven los datos en la url-->
+		<form name="AgregaYouAdm" action="controlyoutubers.html" method="get"> <!--tambien se puede post, con get se ven los datos en la url-->
 
-			<div class="box"> 
-
-				
+			<div class="box"> 	
 				<br>
 				<div>	
 					<label for="nombreusuario">Nombre de usuario</label>
-					<input type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de usuario" align="right">
+					<input type="text" name="nombreUsuarioAgregaYouAdm" id="nombreUsuarioAgregaYouAdm" placeholder="Nombre de usuario" align="right" onblur="guardarAgregaYouAdm()">
 				</div>
 				<br>
 				<div>
 					<label for="password">Password</label>
-					<input type="password" name="Password" id="password" placeholder="Contraseña" >
+					<input type="password" name="passwordAgregaYouAdm" id="passwordAgregaYouAdm" placeholder="Contraseña">
 				</div>
 				<br>
 				<div>
 					<label for="Repassword">Repetir Password</label>
-					<input type="password" name="repassword" id="repassword" placeholder="Repetir Contraseña" >
+					<input type="password" name="repasswordAgregaYouAdm" id="repasswordAgregaYouAdm" placeholder="Repetir Contraseña">
 				</div>
 				<br>
 				<div>
 					<label for="nombre" >Nombre</label>
-					<input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+					<input type="text" id="nombreAgregaYouAdm" name="nombreAgregaYouAdm" placeholder="Nombre" onblur="guardarAgregaYouAdm()"/>
 				</div>
 				<br>
 				<div>	
 					<label for="nombrecanal">Nombre del canal</label>
-					<input type="text" id="nombrecanal" name="nombrecanal" placeholder="Nombre del canal">
+					<input type="text" id="nombreCanalAgregaYouAdm" name="nombreCanalAgregaYouAdm" placeholder="Nombre del canal"onblur="guardarAgregaYouAdm()">
 				</div>
 				<br>
 				<div>	
 					<label for="categoria">Categoria del canal</label>
-					<input type="text"  id="categoria" name="categoria" placeholder="Categoria">
+					<input type="text"  id="categoriaAgregaYouAdm" name="categoriaAgregaYouAdm" placeholder="Categoria" onblur="guardarAgregaYouAdm()">
 				</div>
 				<br>
 				<div>	
 					<label for="suscriptores">Suscriptores del canal</label>
-					<input type="text"  id="suscriptores" name="suscriptores" placeholder="Suscriptores">
+					<input type="text"  id="suscriptoresAgregaYouAdm" name="suscriptoresAgregaYouAdm" placeholder="Suscriptores" onblur="guardarAgregaYouAdm()">
 				</div>
 				<br>
 				<div>
 					<label for="correo">Correo</label>
-					<input type="mail" id="correo" name="correo" placeholder="Correo" />
+					<input type="mail" id="correoAgregaYouAdm" name="correoAgregaYouAdm" placeholder="Correo" onblur="guardarAgregaYouAdm()" />
 				</div>
 				<br>
 				<div>	
-					<label for="telefono">Nombre del canal</label>
-					<input type="text"  id="telefono" name="telefono" placeholder="Telefono">
+					<label for="telefono">Telefono</label>
+					<input type="text"  id="telefonoAgregaYouAdm" name="telefonoAgregaYouAdm" placeholder="Telefono" onblur="guardarAgregaYouAdm()">
 				</div>
 				<br>
 				<div>

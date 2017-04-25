@@ -1,3 +1,34 @@
+.vtnFondoN{
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  position: fixed;
+  background:white;
+  display: none;
+  z-index: 1;
+}
+
+.form{
+  width: 310px;
+  height: 225px;
+  padding: 25px;
+  background-color: #FFF;
+  color: #666;
+  top: 60%;
+  left: 40%;
+  position: absolute;
+  margin-top: -230px;
+  border-radius: 6px;
+  border: #B40404 4px solid; 
+
+}
+
+.cerrar{
+  color: red;
+  font-weight: 900;
+  text-align: right;
+}
+
 body,html{ height:100%; margin:0;}
 .llene
 {
@@ -7,7 +38,7 @@ body,html{ height:100%; margin:0;}
 
   .box {
     background: white;
-    width:300px;
+    width:300px; 
     border-radius:6px;
     margin: 0 auto 0 auto;
     padding:0px 0px 70px 0px;

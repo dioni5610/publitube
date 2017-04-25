@@ -6,9 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 		<link rel="stylesheet" href="../css/agregaVideoYoutuberAdmin.css">
 		<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
-
+		<script src="../js/localStorageAdmin.js"></script>
 	</head>
-	<body>
+	<body onload="mostrarAgregaVideoYouAdm()">
 		<header>
 			<div class="logo">
 				<img src="../images/logo.png" alt=""width="200" height="75" >
@@ -27,10 +27,10 @@
 		</header>
 		<h1>Subir video</h1>
 		<hr>
-		<form method="post" action="../index.html">
+		<form name="AgregaVideoYouAdm" method="post" action="../index.html">
 			<div class="box">
-				<input type="text" name="url" class="url" placeholder="Título del video" />
-				<input type="text" name="url" class="url" placeholder="Ingresa la url del video" />
+				<input type="text" name="tituloAgregaVideoYouAdm" id="tituloAgregaVideoYouAdm" class="url" placeholder="Título del video" onblur="guardarAgregaVideoYouAdm()"/>
+				<input type="text" name="urlAgregaVideoYouAdm" id="urlAgregaVideoYouAdm" class="url" placeholder="Ingresa la url del video" onblur="guardarAgregaVideoYouAdm()" />
 
 				<select id="soflow">
 					<option>Seleciona una Empresa</option>
@@ -44,7 +44,7 @@
   					<option>Producto 2</option>
 				</select>
 
-				<textarea class="url" name="message" rows="7" cols="30" placeholder="Comentarios"></textarea><br>
+				<textarea class="url" name="comentariosAgregaVideoYouAdm" id="comentariosAgregaVideoYouAdm" rows="7" cols="30" placeholder="Comentarios" onblur="guardarAgregaVideoYouAdm()"></textarea><br>
 
 				
 				<button class="btn" type="submit">Subir</button>

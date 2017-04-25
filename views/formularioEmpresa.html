@@ -7,8 +7,21 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/formularioEmpresa.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageIndex.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/manejoDOM.js"></script>
 </head>
-<body>
+<body onload="mostrarRegistroEmpresa()">
+
+	<div class="vtnFondoN">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
+			<h3>BIENVENIDO A PUBLITUBE</h3>
+			<hr>
+			<button>Aceptar</button>
+			</div>
+	</div> 
+
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
@@ -34,18 +47,18 @@
 			<label class="llene">Llene Formulario de Registro</label>
 			<hr class="SeparadorDatos">
 		</div>
-	 	<form>
+	 	<form name = "registroEmpresa">
 	  		<table class="box">
-		    	<tr><td>Nombre de la Empresa</td><td><input class="email" type="text" maxlength="30" placeholder="ejem. Youtube"></td></tr>
-		    	<tr><td>E-mail</td><td><input class="email" type="email" maxlength="20" placeholder="ejem@ejem"></td></tr>
-		    	<tr><td>Apellidos de Contacto</td><td><input class="email" type="text" maxlength="30" placeholder="ejem. Garcia"></td></tr>
-		    	<tr><td>Nombre del Contacto</td><td><input class="email" type="text" maxlength="20" placeholder="ejem. Dioni"></td></tr>
-		    	<tr><td>Contraseña</td><td><input class="email" type="password" maxlength="30" placeholder="Contraseña123"></td></tr>
-		    	<tr><td>Repita su Contraseña</td><td><input class="email" type="password" maxlength="30" placeholder="Contraseña123"></td></tr>
-		    	<tr><td>Telefono de contacto</td><td><input class="email" type="tel" maxlength="12" placeholder="22 2222 22"></td></tr>
-		    	<tr><td>RFC</td><td><input class="email" type="text" maxlength="12" placeholder="RFC"></td></tr>
+		    	<tr><td>Nombre de la Empresa</td><td><input class="email" name="nombreEmpre" id="nombreEmpre" onblur="guardarRegistroEmpresa()" type="text" maxlength="30" ></td></tr>
+		    	<tr><td>E-mail</td><td><input class="email" name="email" id="email" onblur="guardarRegistroEmpresa()" type="email" maxlength="20" ></td></tr>
+		    	<tr><td>Apellidos de Contacto</td><td><input class="email" name="apellido" id="apellido" onblur="guardarRegistroEmpresa()" type="text" maxlength="30"></td></tr>
+		    	<tr><td>Nombre del Contacto</td><td><input class="email" name="nombreContacto" id="nombreContacto" onblur="guardarRegistroEmpresa()" type="text" maxlength="20"></td></tr>
+		    	<tr><td>Contraseña</td><td><input class="email" name="contrasena" id="contrasena" type="password" maxlength="30" ></td></tr>
+		    	<tr><td>Repita su Contraseña</td><td><input class="email" name="recontra" id="recontra" type="password" maxlength="30"></td></tr>
+		    	<tr><td>Telefono de contacto</td><td><input class="email" name="telefono" id="telefono" onblur="guardarRegistroEmpresa()" type="tel" maxlength="12"></td></tr>
+		    	<tr><td>RFC</td><td><input class="email" name="rfc" id="rfc" onblur="guardarRegistroEmpresa()" type="text" maxlength="12"></td></tr>
 
-		    	<tr><td><input class = "btn" type="submit"> </td><td><input class = "btn2" type="reset"></td></tr>
+		    	<tr><td><a href="javascript:openFondoNegro();" class = "btn2" type="button">Registrarse</td><td><input class = "btn2" type="reset"></td></tr>
 	  		</table>
 		</form>
 	</div>

@@ -7,8 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/contacto.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+	<script src="../js/localStorageIndex.js"></script>
 </head>
-<body>
+<body onload="mostrarContacto()">
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
@@ -31,14 +32,15 @@
 	<h2>Tu información es valiosa para nosotros ¡Mándanos tu opinión!</h2>
 	<hr class="SeparadorDatos">
 
-	<form action="" method="POST" enctype="multipart/form-data">
+	<form name="Contacto" action="" method="POST" enctype="multipart/form-data">
 		<div class="box">
 			<br>
-   			<input class="email" type="hidden"> Tu Nombre:<br>
-    		<input class="email" type="email"><br> Tu e-mail:<br>
-    		<input class="email" type="text"><br> Tu Mensaje:<br>
-    		<textarea class="email" name="message" rows="7" cols="30">
-    		</textarea><br>
+			<label> Tú Nombre: </label>
+   			<input class="email" type="text" name="nombre" id="nombre" onblur="guardarContacto()"><br>
+   			<label> Tú E-mail:</label>
+    		<input class="email" type="email" name="email" id="email" onblur="guardarContacto()"><br><br>
+    		<label> Tú Mensaje:</label>
+    		<input class="email" type="text" name="mensaje" id="mensaje" onblur="guardarContacto()"><br><br>
     		<br>
     		<input type="submit">
     	</div> 

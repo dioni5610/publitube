@@ -4,13 +4,40 @@
 		<title>PubliTube</title>
 		<script type="text/javascript" src="js/inicio.js"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/maquetaInicio.css"/>
-
 		<link rel="shortcut icon" type= "image/png" href="images/favicon.png"/>
-
+		<script type="text/javascript" src="js/manejoDOM.js"></script>
 	</head>
 	<body>
+
+
+		<div class="vtnFondoN">
+			<div class="form">
+			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
+			<h1>Ha olvidado su contraseña</h1>
+			<hr>
+				<form>
+				<table>
+					<tr>
+						<td>Correo electronico</td>
+						<td><input type="text" placeholder="Ingresa tu correo" name=""></td>
+					</tr>
+					<tr><td><hr></td></tr>
+					<tr>
+						<td>Usuario</td>
+						<td><input type="text" placeholder="Ingresa Usuario" name=""></td>
+					</tr>
+					<tr><td><hr></td></tr>
+				</table>
+				<input type="submit" value="Enviar" name="enviaOlvido">
+				</form>
+			</div>
+		</div>
+
+
+
 		<header>
 			<div class="logo">
 				<img src="images/logo.png" alt="" width="200" height="75" >
@@ -38,7 +65,7 @@
 			
 
 
-			<div = class "login">
+			<div  class= "login">
 				<form method="post" action="index.html">
 					<div class="box">
 						<h1>Ingreso a PubliTube</h1>
@@ -47,7 +74,8 @@
 						<button class="btn" type="submit">Iniciar Sesión</button>
 						<a class="btn2" href="views/eligeRegistro.html" title="Registro">Registrarse</a>
 
-						<p class = "olvido"><u>¿Olvidaste la contraseña? </u></p>
+						<a class = "olvido" href="javascript:openFondoNegro();"><u>¿Olvidaste la contraseña? </u>
+						</a>
 						<a class="btn" href="views/inicioAdmin.html" title="ISadmin">Iniciar Sesión admin</a>
 						<a class="btn" href="views/inicioYoutuber.html" title="ISyou">Iniciar Sesión youtuber</a>
 						<a class="btn" href="views/inicioEmpresa.html" title="ISempresa">Iniciar Sesión empresa</a>
