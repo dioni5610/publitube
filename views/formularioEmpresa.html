@@ -98,25 +98,42 @@
 		</div>
 	</footer>
 
+	    
+
 	<script type="text/javascript">
 		function comprobar()
 		{
 			var nombre = document.formu.nombre.value;
 			var email = document.formu.email.value;
 			var apellido = document.formu.apellido.value;
+			var exp = /^[a-zA-Z]*$/;
 			var contac = document.formu.contac.value;
 			var pass = document.formu.pass.value;
 			var rpass = document.formu.rpass.value;
 			var tel = document.formu.tel.value;
 			var rfc = document.formu.rfc.value;
 			var expr = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+			var exp2 = /^([0-9])*$/;
 
 			if (nombre.length > 15)
 		   	{
 		      	alert("Tu nombre es demasiado grande. Redúcelo.");
 		      	return false;
 		   	}
+            
 
+
+            else if (exp.test(contac))
+            {
+          	
+            }
+
+            else
+            {
+            	alert("El nombre debe contener solo letras");
+            	return false;
+            }
+			
 			if(expr.test(email))
 			{
 				
@@ -128,6 +145,15 @@
 				alert("Las contraseñas no coinciden");
 				return false;
 			}
+
+			else if(exp2.test(tel))
+           {
+
+           }
+           else{
+       	    alert("El telefono debe contener solo caracteres numericos");
+            	return false;
+           }
 
 			if(nombre.length == 0)
 			{

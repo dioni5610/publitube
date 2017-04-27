@@ -148,19 +148,35 @@
 			var correo = document.formulario.correo.value;
 			var telefono = document.formulario.telefono.value;
 			var expr = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+			var exp = /^[a-zA-Z]*$/;
+            var exp2 = /^([0-9])*$/;
 
 			if(expr.test(correo))
 			{
 				
 			}
+
 			else{alert("Direccion de correo erronea");return false;}
-	
+
+
 			if(passwordc != password)
 			{
 				alert("Las contraseñas no coinciden");
 				return false;
 			}
-		
+
+		  else if (exp.test(nombre))
+            {
+          	
+            }
+
+            else
+            {
+            	alert("El nombre debe contener solo letras");
+            	return false;
+            }
+
+
 			if(nombreusuario.length == 0)
 			{
 				alert("Llene los campos obligatorios");
@@ -206,7 +222,25 @@
 	      		alert("Llene los campos obligatorios");
 	      		return false;
 	      	}
-	      	
+
+	      	else if(exp2.test(telefono))
+           {
+
+           }
+           else{
+       	    alert("El telefono debe contener solo caracteres numericos");
+            	return false;
+           }
+
+           if(exp2.test(subs))
+           {
+
+           }
+           else{
+       	    alert("La cantidad de suscriptores debe ser con caracteres numericos");
+            	return false;
+           }
+
 
 			return true;
 		}
