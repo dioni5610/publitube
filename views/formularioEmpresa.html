@@ -115,6 +115,18 @@
 			var expr = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 			var exp2 = /^([0-9])*$/;
 
+			
+            if (exp.test(apellido))
+            {
+          	
+            }
+
+            else
+            {
+            	alert("El apellido debe contener solo letras");
+            	return false;
+            }
+
 			if (nombre.length > 15)
 		   	{
 		      	alert("Tu nombre es demasiado grande. Redúcelo.");
@@ -195,6 +207,8 @@
 	      		alert("Llenar todos los campos");
 	      		return false;
 	      	}
+
+	      	
 
 			return true;
 		}
