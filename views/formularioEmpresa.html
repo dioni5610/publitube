@@ -10,22 +10,47 @@
 	<script src="../js/localStorageIndex.js"></script>
 	<script type="text/javascript" src="../js/jquery.js"></script>
 	<script type="text/javascript" src="../js/manejoDOM.js"></script>
+	<script type="text/javascript" src="../js/validaciones/validacionRegistroEmpresa.js"></script>
+
+	<script type="text/javascript" src="../js/bootstrap-notify.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap-notify.css"/>
 </head>
 <body onload="mostrarRegistroEmpresa()">
 
 	<div class="vtnFondoN">
 			<div class="form">
-			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
 			<h3>BIENVENIDO A PUBLITUBE</h3>
 			<hr>
-			<button>Aceptar</button>
 			</div>
 	</div> 
+
+	<div class="alertaNombre">
+		<div class="notifications top-right">
+			<div class="alert alert-danger"><strong>El nombre de la empresa es demasiado grande. Redúcelo.</strong></div>
+		</div>
+	</div>
+	<div class="alertaCorreo">
+		<div class="notifications top-right">
+			<div class="alert alert-danger"><strong>El correo es invalido, vuelve a comprobar.</strong></div>
+		</div>
+	</div>
+	<div class="alertaContrasena">
+		<div class="notifications top-right">
+			<div class="alert alert-danger"><strong>Las contraseñas no coinciden.</strong></div>
+		</div>
+	</div>
+	<div class="alertaLlenado">
+		<div class="notifications top-right">
+			<div class="alert alert-danger"><strong>Complete todos los campos para su registro.</strong></div>
+		</div>
+	</div>
+
+
 
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
-			<img src="../images/logo.png" alt=""width="200" height="75" >
+			<img src="../images/logo.png" alt="" width="200" height="75" >
 		</div>
 		<br>
 			<nav class="navbar navbar-default">
@@ -44,21 +69,49 @@
 		<div id="DatosContacto">
 			<label class="EtiquetaRegistro">Registro Empresa</label>
 			<br>
-			<label class="llene">Llene Formulario de Registro</label>
+			<label class="llene">Llene el formulario de Registro</label>
 			<hr class="SeparadorDatos">
 		</div>
-	 	<form name = "registroEmpresa">
-	  		<table class="box">
-		    	<tr><td>Nombre de la Empresa</td><td><input class="email" name="nombreEmpre" id="nombreEmpre" onblur="guardarRegistroEmpresa()" type="text" maxlength="30" ></td></tr>
-		    	<tr><td>E-mail</td><td><input class="email" name="email" id="email" onblur="guardarRegistroEmpresa()" type="email" maxlength="20" ></td></tr>
-		    	<tr><td>Apellidos de Contacto</td><td><input class="email" name="apellido" id="apellido" onblur="guardarRegistroEmpresa()" type="text" maxlength="30"></td></tr>
-		    	<tr><td>Nombre del Contacto</td><td><input class="email" name="nombreContacto" id="nombreContacto" onblur="guardarRegistroEmpresa()" type="text" maxlength="20"></td></tr>
-		    	<tr><td>Contraseña</td><td><input class="email" name="contrasena" id="contrasena" type="password" maxlength="30" ></td></tr>
-		    	<tr><td>Repita su Contraseña</td><td><input class="email" name="recontra" id="recontra" type="password" maxlength="30"></td></tr>
-		    	<tr><td>Telefono de contacto</td><td><input class="email" name="telefono" id="telefono" onblur="guardarRegistroEmpresa()" type="tel" maxlength="12"></td></tr>
-		    	<tr><td>RFC</td><td><input class="email" name="rfc" id="rfc" onblur="guardarRegistroEmpresa()" type="text" maxlength="12"></td></tr>
 
-		    	<tr><td><a href="javascript:openFondoNegro();" class = "btn2" type="button">Registrarse</td><td><input class = "btn2" type="reset"></td></tr>
+	 	<form action="javascript:openTemporal();" method="post" name="registroEmpresa" onSubmit="return comprobar();">
+	  		<table class="box">
+		    	<tr>
+		    		<td>Nombre de la Empresa</td>
+		    		<td><input class="email" name="nombreEmpre" id="nombreEmpre" onblur="guardarRegistroEmpresa()" type="text" maxlength="30" ></td>
+		    	</tr>
+		    	<tr>
+		    		<td>E-mail</td>
+		    		<td><input class="email" name="email" id="email" onblur="guardarRegistroEmpresa()" type="email" maxlength="20" ></td>
+		    	</tr>
+		    	<tr>
+		    		<td>Apellidos de Contacto</td>
+		    		<td><input class="email" name="apellido" id="apellido" onblur="guardarRegistroEmpresa()" type="text" maxlength="30"></td>
+		    	</tr>
+		    	<tr>
+		    		<td>Nombre del Contacto</td>
+		    		<td><input class="email" name="nombreContacto" id="nombreContacto" onblur="guardarRegistroEmpresa()" type="text" maxlength="20"></td>
+		    	</tr>
+		    	<tr>
+		    		<td>Contraseña</td>
+		    		<td><input class="email" name="contrasena" id="contrasena" type="password" maxlength="30" ></td>
+		    	</tr>
+		    	<tr>
+		    		<td>Repita su Contraseña</td>
+		    		<td><input class="email" name="recontra" id="recontra" type="password" maxlength="30"></td>
+		    	</tr>
+		    	<tr>
+		    		<td>Telefono de contacto</td>
+		    		<td><input class="email" name="telefono" id="telefono" onblur="guardarRegistroEmpresa()" type="tel" maxlength="12"></td>
+		    	</tr>
+		    	<tr>
+		    		<td>RFC</td>
+		    		<td><input class="email" name="rfc" id="rfc" onblur="guardarRegistroEmpresa()" type="text" maxlength="12"></td>
+		    	</tr>
+
+		    	<tr>
+		    		<td><button class = "btn2" type="submit">Registrarse</button></td>
+		    		<td><input class = "btn2" type="reset"></td>
+		    	</tr>
 	  		</table>
 		</form>
 	</div>
@@ -99,5 +152,6 @@
 				<p>© 2017 PubliTube - Publicidad empresarial por bloggeros.		Tel.12233445</p>
 			</div>
 		</footer>
+
 	</body>
 </html>

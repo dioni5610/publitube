@@ -6,8 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/maquetaPreguntas.css"/>
 		<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/preguntasRespuestas.js"></script>
+
+	
+
 	</head>
-	<body>
+	<body onload="preguntasRespuestas()">
 		<header>
 			<div class="logo">
 				<img src="../images/logo.png" alt=""width="200" height="75" >
@@ -32,34 +37,49 @@
 
 		<div class = "contenedorPreg">
 			<h1>Usuarios YouTube:</h1>
-			<ul>
-				<a>1- ¿Se puede ofertar algo diferente aun producto? (Eventos, Mensajes, etc.)</a>
-				<p>R: Por el momento no, pero se trabajará en ello.</p>
+			<dl id="faqs">
+				
+					<dt><a>1- ¿Se puede ofertar algo diferente aun producto? (Eventos, Mensajes, etc.)</a></dt>
+					<dd><p>R: Por el momento no, pero se trabajará en ello.</p></dd>
+				
 				<br><br><br><br><br>
-				<a>2- ¿Cómo sabrán si ya realicé el video?</a>
-				<p>R: Dentro de la ventana "Mis patrocinios" se podrá ver la casilla "Subir Video", el cual notificará a los involucrados de dicho movimiento.</p>
+				
+					<dt><a>2- ¿Cómo sabrán si ya realicé el video?</a></dt>
+					<dd><p>R: Dentro de la ventana "Mis patrocinios" se podrá ver la casilla "Subir Video", el cual notificará a los involucrados de dicho movimiento.</p></dd>
+				
 				<br><br><br><br><br>
-				<a>3- ¿Cómo es el método de pago?</a>
-				<p>R: Se realiza el contacto, la empresa paga por el producto pero el dinero se retiene hasta que el youtuber realiza el video,de caso contrario se regresará el dinero a la empresa.</p>
+				
+					<dt><a>3- ¿Cómo es el método de pago?</a></dt>
+					<dd><p>R: Se realiza el contacto, la empresa paga por el producto pero el dinero se retiene hasta que el youtuber realiza el video,de caso contrario se regresará el dinero a la empresa.</p></dd>
+				
 				<br><br><br><br><br>
-				<a>4- ¿Puede pasar que no me paguen y ya realicé el video?</a>
-				<p>R: No, puesto que antes de realizar el video la empresa tiene que realizar el pago (El cual será retenido hasta que se suba el video).</p>
+				
+					<dt><a>4- ¿Puede pasar que no me paguen y ya realicé el video?</a></dt>
+					<dd><p>R: No, puesto que antes de realizar el video la empresa tiene que realizar el pago (El cual será retenido hasta que se suba el video).</p></dd>
+				
 				<br><br><br><br><br>
-				<a>5- Realicé el video pero después de la fecha acordada...</a>
-				<p>R: Dependerá mucho sobre la decisión de la empresa si seguir o no, pero se tendrá que realizar la conexión nuevamente puesto que ya se le habrá devuelto el dinero a la empresa en ese momento.</p>
+				
+					<dt><a>5- Realicé el video pero después de la fecha acordada...</a></dt>
+					<dd><p>R: Dependerá mucho sobre la decisión de la empresa si seguir o no, pero se tendrá que realizar la conexión nuevamente puesto que ya se le habrá devuelto el dinero a la empresa en ese momento.</p></dd>
+				
 				<br><br><br><br><br>
 
 				<h1>Usuarios Empresa:</h1>
-	
-				<a>6- Ya pagué ¿Qué pasa si no se realiza el video en el tiempo acordado?</a>
-				<p>R: Se le devolverá el dinero puesto que al pagar, no se le da el dinero al youtuber si no que lo retiene PubliTube para evitar este tipo de percances.</p>
+				
+					<dt><a>6- Ya pagué ¿Qué pasa si no se realiza el video en el tiempo acordado?</a></dt>
+					<dd><p>R: Se le devolverá el dinero puesto que al pagar, no se le da el dinero al youtuber si no que lo retiene PubliTube para evitar este tipo de percances.</p></dd>
+				
 				<br><br><br><br><br>
-				<a>7- ¿Se puede contactar a un youtuber pero con más confidencialidad sobre mi producto?</a>
-				<p>R: No, para evitar mal uso del servicio.</p>
+				
+					<dt><a>7- ¿Se puede contactar a un youtuber pero con más confidencialidad sobre mi producto?</a></dt>
+					<dd><p>R: No, para evitar mal uso del servicio.</p></dd>
+				
 				<br><br><br><br><br>
-				<a>8- Me contactar youtubers con pocos subscriptores ¿Qué puedo hacer?</a>
-				<p>R: Se podrá realizar una restricción por estrellas en el cual puedes seleccionar que tipo de youtuber quieres que te contacten.</p>
-			</ul>
+				
+					<dt><a>8- Me contactar youtubers con pocos subscriptores ¿Qué puedo hacer?</a></dt>
+					<dd><p>R: Se podrá realizar una restricción por estrellas en el cual puedes seleccionar que tipo de youtuber quieres que te contacten.</p></dd>
+				
+			</dl>
 		</div>
 		<br><br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br><br>
@@ -100,5 +120,6 @@
 				<p>© 2017 PubliTube - Publicidad empresarial por bloggeros.		Tel.12233445</p>
 			</div>
 		</footer>
+
 	</body>
 </html>

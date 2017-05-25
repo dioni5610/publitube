@@ -8,8 +8,31 @@
 	<link rel="stylesheet" type="text/css" href="../css/contacto.css"/>
 	<link rel="shortcut icon" type= "image/png" href="../images/favicon.png"/>
 	<script src="../js/localStorageIndex.js"></script>
-</head>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/manejoDOM.js"></script>
+	<script language="javascript" src="../js/validaciones/validacionContacto.js"></script>
+
+	<script type="text/javascript" src="../js/bootstrap-notify.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap-notify.css"/>
+</head> 
 <body onload="mostrarContacto()">
+
+	<div class="alertaCorreo">
+		<div class="notifications top-right">
+			<div class="alert alert-danger"><strong>Formato erroneo al ingresar el email.</strong></div>
+		</div>
+	</div>
+
+
+		<div class="vtnFondoN">
+			<div class="form">
+			<br>
+			<h3>ENVIADO EXITOSAMENTE!</h3>
+			<p>Gracias por ayudar a mejorar PubliTube</p>
+			<hr>
+			</div>
+		</div>
+
 	<!--Plantilla Cabecera-->
 	<header>
 		<div class="logo">
@@ -32,7 +55,7 @@
 	<h2>Tu información es valiosa para nosotros ¡Mándanos tu opinión!</h2>
 	<hr class="SeparadorDatos">
 
-	<form name="Contacto" action="" method="POST" enctype="multipart/form-data">
+	<form name="Contacto" action="javascript:openTemporal()" method="post" onSubmit="return comprobarContacto();">
 		<div class="box">
 			<br>
 			<label> Tú Nombre: </label>
@@ -42,7 +65,7 @@
     		<label> Tú Mensaje:</label>
     		<input class="email" type="text" name="mensaje" id="mensaje" onblur="guardarContacto()"><br><br>
     		<br>
-    		<input type="submit">
+    		<button class="btn" type="submit">Enviar</button>
     	</div> 
     </form>
 

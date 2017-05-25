@@ -1,3 +1,43 @@
+.alertaNombre{
+  display: none;
+}
+.alertaCorreo{
+  display: none;
+}
+.alertaContrasena{
+  display: none;
+}
+.alertaLlenado{
+  display: none;
+}
+
+.vtnFondoN{
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  position: fixed;
+  background: white;
+  display: none;
+  z-index: 1;
+}
+
+.form{
+  width: 310px;
+  height: 200px;
+  padding: 25px;
+  background-color: #FFF;
+  color: #666;
+  top: 60%;
+  left: 40%;
+  position: absolute;
+  margin-top: -230px;
+  border-radius: 6px;
+  border: #B40404 4px solid; 
+
+}
+
+
+
 body,html{ height:100%; margin:0;}
 /*Formulario*/
 .EtiquetaRegistro
@@ -5,7 +45,7 @@ body,html{ height:100%; margin:0;}
 	font-size: 20pt;
  	text-align: left;
 }
-
+ 
 .llene
 {
 	font-size: 14pt;

@@ -1,3 +1,32 @@
+.alertaCorreo{
+  display: none;
+}
+
+ .vtnFondoN{
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  position: fixed;
+  background:white;
+  display: none;
+  z-index: 1;
+} 
+
+.form{
+  width: 310px;
+  height: 225px;
+  padding: 25px;
+  background-color: #FFF;
+  color: #666;
+  top: 60%;
+  left: 40%;
+  position: absolute;
+  margin-top: -230px;
+  border-radius: 6px;
+  border: #B40404 4px solid; 
+
+}
+
 @media (min-width: 1271px) {
 
 /*LOGO*/
@@ -6,7 +35,7 @@
      color: maroon;
   }
   
-/*BARRA DE MENU PRINCIPAL*/
+/*BARRA DE MENU PRINCIPAL*/ 
   
   .navbar{
     background-color: #B40404;
@@ -105,7 +134,7 @@
     margin-top:20px;
     margin-bottom:20px;
     float:left;
-    margin-left:16px;
+    margin-left:80px;
     font-weight:800;
     font-size:0.8em;
   }
