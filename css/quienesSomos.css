@@ -1,44 +1,25 @@
-/*SLIDE*/
-    .mySlides{
-      width:950px; 
-      height:400px;
-      margin: auto;
-    }
 
-
-.w3-btn,.w3-btn-block,.w3-button{
-  border:none;
-  display:inline-block;
-  outline:0;
-  padding:6px 16px;
-  vertical-align:middle;
-  overflow:hidden;
-  text-decoration:none!important; 
-  color:#fff;
-  background-color:#000;
-  text-align:center;
-  cursor:pointer;
-  white-space:nowrap
-}
 
 .w3-button{
   color:#000;
   background-color:#f1f1f1;
   padding:8px 16px
 }
-.w3-button:hover{
-  color:#000!important;
-  background-color:#ccc!important
-}
+
 .w3-tooltip,.w3-display-container{
   position:relative
   }
-.w3-tooltip .w3-text{
-  display:none
-  }
-.w3-tooltip:hover .w3-text{
-  display:inline-block
-}
+
+
+body,html{ height:100%; margin:0;}
+@media (min-width: 1230px){
+
+ /*SLIDE*/
+    .mySlides{
+      width:950px; 
+      height:400px;
+      margin: auto;
+    }
 
 .w3-display-left{
   position:absolute;
@@ -54,8 +35,7 @@
   transform:translate(0%,-50%);
   -ms-transform:translate(0%,-50%)
 }
-body,html{ height:100%; margin:0;}
-@media (min-width: 1230px){
+
 
 /*LOGO*/
 	.logo{
@@ -207,6 +187,27 @@ body,html{ height:100%; margin:0;}
 
 @media (min-width: 577px) and (max-width: 1230px){
 
+ /*SLIDE*/
+    .mySlides{
+      width:100%; 
+      height:400px;
+      margin: auto;
+    }
+  .w3-display-left{
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%)
+  }
+  .w3-display-right{
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%)
+  }
+
 /*LOGO*/
   .logo{
      text-align: center;
@@ -354,6 +355,27 @@ body,html{ height:100%; margin:0;}
 }
 
 @media (min-width: 0px) and (max-width: 577px){
+
+/*SLIDE*/
+    .mySlides{
+      width:100%; 
+      height:400px;
+      margin: auto;
+    }
+.w3-display-left{
+  position:absolute;
+  top:50%;
+  left:0%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(-0%,-50%)
+}
+.w3-display-right{
+  position:absolute;
+  top:50%;
+  right:0%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(0%,-50%)
+}
 
 /*LOGO*/
   .logo{

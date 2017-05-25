@@ -10,16 +10,36 @@
 	<script src="../js/localStorageIndex.js"></script>
 	<script type="text/javascript" src="../js/jquery.js"></script>
 	<script type="text/javascript" src="../js/manejoDOM.js"></script>
+	<script type="text/javascript" src="../js/validaciones/validacionRegistroYoutuber.js"></script>
+
+	<script type="text/javascript" src="../js/bootstrap-notify.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap-notify.css"/>
 </head>
 <body onload="mostrarRegistroYoutuber()"> 
 	<div class="vtnFondoN">
 			<div class="form">
-			<div class="cerrar"><a href="javascript:closeFondoNegro();"> Cierra X</a></div>
 			<h3>BIENVENIDO A PUBLITUBE</h3>
 			<hr>
-			<button>Aceptar</button>
 			</div>
 	</div> 
+
+	<div class="alertaCorreo">
+		<div class="notifications top-right">
+			<div class="alert alert-danger"><strong>El correo es invalido, vuelve a comprobar.</strong></div>
+		</div>
+	</div>
+	<div class="alertaContrasena">
+		<div class="notifications top-right">
+			<div class="alert alert-danger"><strong>Las contraseñas no coinciden.</strong></div>
+		</div>
+	</div>
+	<div class="alertaLlenado">
+		<div class="notifications top-right">
+			<div class="alert alert-danger"><strong>Complete todos los campos para su registro.</strong></div>
+		</div>
+	</div>
+
+
 
 	<!--Plantilla Cabecera-->
 	<header>
@@ -42,31 +62,31 @@
 	<label class="llene">Llene Formulario de Registro</label>
 	<hr>
 	<section>
-		<form name="registroYoutuber" action="controlyoutubers.html" method="get"> <!--tambien se puede post, con get se ven los datos en la url-->
+		<form name="registroYoutuber" action="../create_accountYoutuber.php" method="post" onSubmit="return comprobar();"> <!--tambien se puede post, con get se ven los datos en la url-->
 			<div class="box"> 
 				<br>
 				<div>	
-					<label for="nombreusuario">Nombre de usuario</label>
+					<label for="nombreUsuarioRegYou">Nombre de usuario</label>
 					<input type="text" name="nombreUsuarioRegYou" id="nombreUsuarioRegYou" onblur="guardarRegistroYoutuber()" placeholder="Nombre de usuario" align="right">
 				</div>
 				<br>
 				<div>
-					<label for="password">Password</label>
+					<label for="passwordRegYou">Password</label>
 					<input type="password" name="passwordRegYou" id="passwordRegYou" placeholder="Contraseña" >
 				</div>
 				<br>
 				<div>
-					<label for="Repassword">Repetir Password</label>
+					<label for="repasswordRegYou">Repetir Password</label>
 					<input type="password" name="repasswordRegYou" id="repasswordRegYou" placeholder="Repetir Contraseña" >
 				</div>
 				<br>
 				<div>	
-					<label for="nombrecanal">Nombre del canal</label>
+					<label for="nombrecanalRegYou">Nombre del canal</label>
 					<input type="text" id="nombrecanalRegYou" name="nombrecanalRegYou" onblur="guardarRegistroYoutuber()" placeholder="Nombre del canal">
 				</div>
 				<br>
 				<div>	
-					<label for="categoria">Categoria del canal</label>
+					<label for="categoriaRegYou">Categoria del canal</label>
 					<input type="text"  id="categoriaRegYou" name="categoriaRegYou" onblur="guardarRegistroYoutuber()" placeholder="Categoria">
 				</div>
 				<br>
@@ -76,27 +96,17 @@
 				</div>
 				<br>
 				<div>
-					<label for="correo">Correo</label>
+					<label for="correoRegYou">Correo</label>
 					<input type="mail" id="correoRegYou" name="correoRegYou" onblur="guardarRegistroYoutuber()" placeholder="Correo" />
 				</div>
 				<br>
 				<div>	
-					<label for="telefono">Telefono</label>
+					<label for="telefonoRegYou">Telefono</label>
 					<input type="text"  id="telefonoRegYou" name="telefonoRegYou" onblur="guardarRegistroYoutuber()" placeholder="Telefono">
 				</div>
 				<br>
 				<div>
-					<label>Sexo: </label>
-					<br>
-					<input type="radio" name="opcion1RegYou" value="1" id="opcion1RegYou">
-					<label for="opcion1">Femenino</label>
-					<input type="radio" name="opcion2RegYou" value="2" id="opcion2RegYou">
-					<label for="opcion2">Masculino</label>
-				</div>
-
-				<br>
-				<div>
-					<a href="javascript:openFondoNegro();" class = "btn2" type="button">Registrarse</a>
+					<button class = "btn2" type="submit" >Registrarse</button>
 				</div>
 
 			</div>
@@ -138,5 +148,6 @@
 				<p>© 2017 PubliTube - Publicidad empresarial por bloggeros.		Tel.12233445</p>
 			</div>
 		</footer>
+		
 	</body>
 </html>

@@ -1,3 +1,13 @@
+.alertaNombre{
+  display: none;
+}
+
+.alertaLlenado{
+  display: none;
+}
+
+
+
 .vtnFondoN{
   width: 100%;
   height: 100%;

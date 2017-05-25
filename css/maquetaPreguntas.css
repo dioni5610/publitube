@@ -1,5 +1,9 @@
+#faqs dt, #faqs dd { padding: 0 0 0 50px }
+#faqs dt { font-size:1.5em; color: #9d9d9d; cursor: pointer; height: 37px; line-height: 37px; margin: 0 0 0px 25px}
+#faqs dd { font-size: 1em; margin: 0 0 20px 25px}
 body,html{ height:100%; margin:0;}
 @media (min-width: 1230px){
+
 
 /*LOGO*/
 	.logo{
@@ -12,7 +16,7 @@ body,html{ height:100%; margin:0;}
   .navbar{
     background-color: #B40404;
 
-  }
+  } 
 
   .barraMenu li {
   display: inline;
