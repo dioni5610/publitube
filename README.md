@@ -32,15 +32,15 @@ Serán aquellas personas que quieren adquirir una mejora de reputación para cie
 
 - Tipos de usuarios registrados para la evaluación:
 
-	Administrador:
-		User: admin
-		Password: admin
-	Youtuber:
-		User: diego
-		Password: 12
-	Empresa:
-		User: empre
-		Password: empre
+	- Administrador:
+		- User: admin
+		- Password: admin
+	- Youtuber:
+		- User: diego
+		- Password: 12
+	- Empresa:
+		- User: empre
+		- Password: empre
 	
 	
 	
